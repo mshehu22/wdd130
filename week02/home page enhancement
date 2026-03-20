@@ -22,12 +22,11 @@ index.html
                     
                 </nav>
             </header>
-            <main>
                         <h1>Magdalene Shehu| WDD 130</h1>
                         <img src="images/profile.jpg" alt="Hello, my name is Magdalene Shehu" width="200">
                  <p>Hello! my name is Magdalene Shehu, I am from Bauchi, Nigeria. I enjoy outdoor activities.</p>
-
-<aside>
+                 <main>
+                 <aside>
                              
                         <h2>Bauchi</h2>   
                         <img src="images/bauchi-image.png" alt="Bauchi Yankari Reserve"> 
