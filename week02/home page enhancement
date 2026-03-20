@@ -10,9 +10,9 @@ index.html
 
 
   <link rel ="stylesheet"href="styles/styles.css">
-    </head>
+    </head><head>
 
-        <body>
+        <body><body>
             <header>
                 <nav>
 
@@ -23,11 +23,11 @@ index.html
                 </nav>
             </header>
             <main>
-                        <hi>Magdalene Shehu| WDD 130</hi>
-                        <img src="images/ profile. jpg" alt="Hello my name "width="200">
+                        <h1>Magdalene Shehu| WDD 130</h1>
+                        <img src="images/profile.jpg" alt="Hello, my name is Magdalene Shehu" width="200">
                         <p>Hello! my name is Magdalene Shehu, I am from Bauchi , Nigeria. I enjoy outdoor activities</p>
-                        <main>
-                            <aside>
+                        <main><main>
+                            <aside><aside>
                              
                         <h2>Bauchi</h2>   
                         <img src="images/Bauchi.image.png "alt="Bauchi yankari reserve"> 
@@ -41,7 +41,7 @@ index.html
                        and promotion of tourism and ecotourism in Nigeria.It is also a popular eco-destination in West Africa"-wiki</p>
                             </aside>
                             <footer>
-                                <p>©2026 Magdaleneimage.png Shehu image.png Bauchi Nigeria</p>
+                                <p>©2026 Magdalene Shehu | Bauchi, Nigeria</p>
                             </footer>
                             <body>
                                 <html>
