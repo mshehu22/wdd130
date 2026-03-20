@@ -10,9 +10,9 @@ index.html
 
 
   <link rel ="stylesheet"href="styles/styles.css">
-    </head><head>
+    </head>
 
-        <body><body>
+        <body>
             <header>
                 <nav>
 
@@ -26,11 +26,11 @@ index.html
                         <h1>Magdalene Shehu| WDD 130</h1>
                         <img src="images/profile.jpg" alt="Hello, my name is Magdalene Shehu" width="200">
                         <p>Hello! my name is Magdalene Shehu, I am from Bauchi , Nigeria. I enjoy outdoor activities</p>
-                        <main><main>
-                            <aside><aside>
+                        <main>
+                            <aside>
                              
                         <h2>Bauchi</h2>   
-                        <img src="images/Bauchi.image.png "alt="Bauchi yankari reserve"> 
+                        <img src="images/bauchi-image.png" alt="Bauchi Yankari Reserve"> 
                         <p>"Yankari Game Reserve is a large wildlife park and former National Park located in the south-central part of Bauchi State, 
                             in northeastern Nigeria. It covers an area of about 2,244 km2 (866 sq mi) and
                       is home to several natural warm water springs, as well as a wide variety of flora and fauna. 
