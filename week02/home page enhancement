@@ -2,17 +2,16 @@ index.html
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <meta charset="utf8">
-        <meta name="view port"content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
 <title> Magdalene Shehu | WDD 130 </title>
         <meta name="description" content=" Magdalene Shehu's BYU Idaho WDD 130 coursehome page">
         <meta name="author" content="Magdalene Shehu">
 
 
-  <link rel ="stylesheet" href="style/styles.CSS">
+  <link rel ="stylesheet"href="styles/styles.css">
     </head>
 
-    <head>
         <body>
             <header>
                 <nav>
