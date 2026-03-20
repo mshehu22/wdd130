@@ -25,8 +25,7 @@ index.html
             <main>
                         <h1>Magdalene Shehu| WDD 130</h1>
                         <img src="images/profile.jpg" alt="Hello, my name is Magdalene Shehu" width="200">
-                        <p>Hello! my name is Magdalene Shehu, I am from Bauchi, Nigeria. I enjoy outdoor activities.</p>
-</main>
+                 <p>Hello! my name is Magdalene Shehu, I am from Bauchi, Nigeria. I enjoy outdoor activities.</p>
 
 <aside>
                              
@@ -44,8 +43,8 @@ index.html
                             <footer>
                                 <p>©2026 Magdalene Shehu | Bauchi, Nigeria</p>
                             </footer>
-                            <body>
-                                <html>
+                            </body>
+                                </html>
 
     
                             
