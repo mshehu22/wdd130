@@ -1,77 +1,79 @@
-/* ==========================
-   Universal Reset
-========================== */
-*, *::before, *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* ==========================
-   CSS Variables
-========================== */
 :root {
-  --primary-color: #055a05;
-  --secondary-color: #f4a261; /* now used in buttons */
-  --accent1-color: #264653;
-  --accent2-color: #e9c46a;
-  --heading-font: "Times New Roman", Georgia, serif;
-  --body-font: Arial, Helvetica, sans-serif;
+    --primary-color: #055a05;
+    --secondary-color: #f4a261;
+    --accent1-color: #264653;
+    --accent2-color: #e9c46a;
+    --heading-font: "Times New Roman", Georgia, serif;
+    --body-font: Arial, Helvetica, sans-serif;
 }
 
-/* ==========================
-   Body & Typography
-========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  font-family: var(--body-font);
-  background-color: #f9f9f9;
-  color: var(--primary-color);
-  line-height: 1.6;
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    background-color: #f9f9f9;
 }
 
-h1, h2 {
-  font-family: var(--heading-font);
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
 }
 
-/* ==========================
-   Header
-========================== */
 header {
-  background-color: var(--accent2-color);
-  padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    background-color: var(--accent2-color);
+    padding: 10px;
 }
 
 header img {
-  max-width: 200px;
+    width: 100px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
 }
 
 nav a {
-  margin-right: 15px;
-  text-decoration: none;
-  color: var(--primary-color);
-  font-weight: bold;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 10px;
 }
 
-/* ==========================
-   Hero Section
-========================== */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
 .hero {
-  position: relative;
-  width: 100%;
-  max-height: 500px;
-  overflow: hidden;
+    position: relative;
+    margin: 20px 0;
 }
 
 .hero img {
-  width: 100%;
-  height: auto;
-  display: block;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .hero h1 {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  font-size: 3rem;
-  color: var(--accent1-color);
-  background-color: rgba(255, 255, 255,
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.9;
+    background-color: rgba(38
