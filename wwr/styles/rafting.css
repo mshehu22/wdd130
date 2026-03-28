@@ -1,147 +1,100 @@
-:root {
-  --primary-color: #055a05;
-  --secondary-color: #f4a261;
-  --accent1-color: #264653;
-  --accent2-color: #e9c46a;
-  --heading-font: "Times New Roman", Georgia, serif;
-  --body-font: Arial, Helvetica, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en-US">
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - White Water Rafting Co.</title>
+    <meta name="description"
+      content="Learn about White Water Rafting Co., our history, and our exciting river adventures.">
+    <meta name="author" content="Magdalene Shehu">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
 
-body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
-  background-color: #f9f9f9;
-  line-height: 1.6;
-}
+<body>
+    <header>
+        <img src="images/z-raftingbw.png" alt="White Water Rafting Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
 
-header,
-main,
-footer {
-  width: 840px;
-  margin: 0 auto;
-}
+    <main>
+        <div class="hero">
+            <img src="images/z-excitingexpedition.jpg" alt="People white water rafting on a river">
+            <h1>White Water Rafting Co.</h1>
+            <article>
+                <img src="images/gloverbh222-cooling-off-6476414_1920.jpg"
+                  alt="Happy rafting client">
+                <p>
+                    Our mission is to provide thrilling white water rafting experiences while
+                    creating lasting memories for every adventurer.
+                    We value safety, fun, teamwork, and unforgettable outdoor experiences.
+                </p>
+            </article>
+        </div>
 
-header {
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  align-items: center;
-  background-color: var(--accent1-color);
-  padding: 1rem;
-}
+        <section class="history">
+            <h2>History</h2>
+            <div class="history-content">
+                <p>
+                    White Water Rafting Co. began with a passion for adventure and the outdoors.
+                    From humble beginnings, we have grown into a trusted
+                    company known for exciting trips and professional river guides.
+                </p>
+                <img src="images/z-wwr-blue.jpg" alt="Rafting history image">
+                <p>
+                    Over the years, we have guided countless guests through scenic rivers and
+                    thrilling rapids, creating unforgettable memories while
+                    maintaining our strong commitment to safety and customer satisfaction.
+                </p>
+            </div>
+        </section>
 
-header img {
-  width: 120px;
-  height: auto;
-}
+        <section class="adventures">
+            <h2>Adventure Awaits You!</h2>
+            <div class="adventure-gallery">
+                <figure>
+                    <img src="images/z-excitingexpedition.jpg" alt="Exciting Expedition">
+                    <figcaption>Exciting Expedition</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/gloverbh222-cooling-off-6476414_1920.jpg" alt="Cooling Off">
+                    <figcaption>Cooling Off</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/z-wwr-blue.jpg" alt="River Rush">
+                    <figcaption>River Rush</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/z-excitingexpedition.jpg" alt="Rapid Challenge">
+                    <figcaption>Rapid Challenge</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/gloverbh222-cooling-off-6476414_1920.jpg" alt="Team Adventure">
+                    <figcaption>Team Adventure</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
 
-header nav {
-  display: flex;
-  justify-content: space-around;
-}
+    <footer>
+        <p>© 2026 White Water Rafting Co. | Magdalene Shehu</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.svg" alt="LinkedIn">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="Instagram">
+            </a>
+        </nav>
+    </footer>
+</body>
 
-header nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-family: var(--body-font);
-}
-
-header nav a:hover {
-  color: var(--accent2-color);
-}
-
-.hero {
-  position: relative;
-  margin-bottom: 2rem;
-}
-
-.hero img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.hero h1 {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  padding: 1rem;
-  text-align: center;
-  opacity: 0.9;
-  background-color: rgba(38, 70, 83, 0.8);
-  color: white;
-  font-family: var(--heading-font);
-}
-
-.hero article {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  right: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 1rem;
-  color: var(--accent1-color);
-}
-
-.hero article img {
-  float: right;
-  width: 125px;
-  margin-left: 1rem;
-}
-
-section {
-  padding: 1rem;
-  margin: 1rem 0;
-  background-color: white;
-  border-left: 5px solid var(--secondary-color);
-}
-
-section h2 {
-  color: var(--primary-color);
-  font-family: var(--heading-font);
-  margin-bottom: 0.5rem;
-}
-
-section p {
-  margin-bottom: 1rem;
-}
-
-section img {
-  width: 200px;
-  height: auto;
-  margin: 0.5rem;
-  border: 3px solid var(--accent2-color);
-}
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 2rem;
-  padding: 1rem 0;
-  border-top: 1px solid #ccc;
-}
-
-footer p {
-  color: var(--accent1-color);
-}
-
-.socialmedia {
-  display: flex;
-  gap: 1rem;
-}
-
-.socialmedia a {
-  text-decoration: none;
-}
-
-.socialmedia img {
-  width: 30px;
-  height: auto;
-}
+</html>
