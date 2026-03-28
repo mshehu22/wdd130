@@ -1,100 +1,70 @@
-<!DOCTYPE html>
-<html lang="en-US">
+/* rafting.css */
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - White Water Rafting Co.</title>
-    <meta name="description"
-      content="Learn about White Water Rafting Co., our history, and our exciting river adventures.">
-    <meta name="author" content="Magdalene Shehu">
-    <link rel="stylesheet" href="styles/rafting.css">
-</head>
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-<body>
-    <header>
-        <img src="images/z-raftingbw.png" alt="White Water Rafting Logo">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
-    </header>
+/* CSS Variables */
+:root {
+    --primary-color: #055a05;
+    --secondary-color: #f4a261;
+    --accent1-color: #264653;
+    --accent2-color: #e9c46a;
+    --heading-font: "Times New Roman", Georgia, serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
 
-    <main>
-        <div class="hero">
-            <img src="images/z-excitingexpedition.jpg" alt="People white water rafting on a river">
-            <h1>White Water Rafting Co.</h1>
-            <article>
-                <img src="images/gloverbh222-cooling-off-6476414_1920.jpg"
-                  alt="Happy rafting client">
-                <p>
-                    Our mission is to provide thrilling white water rafting experiences while
-                    creating lasting memories for every adventurer.
-                    We value safety, fun, teamwork, and unforgettable outdoor experiences.
-                </p>
-            </article>
-        </div>
+/* Body Styling */
+body {
+    font-family: var(--body-font);
+    color: var(--primary-color);
+    background-color: #f9f9f9;
+}
 
-        <section class="history">
-            <h2>History</h2>
-            <div class="history-content">
-                <p>
-                    White Water Rafting Co. began with a passion for adventure and the outdoors.
-                    From humble beginnings, we have grown into a trusted
-                    company known for exciting trips and professional river guides.
-                </p>
-                <img src="images/z-wwr-blue.jpg" alt="Rafting history image">
-                <p>
-                    Over the years, we have guided countless guests through scenic rivers and
-                    thrilling rapids, creating unforgettable memories while
-                    maintaining our strong commitment to safety and customer satisfaction.
-                </p>
-            </div>
-        </section>
+/* Header, Main, Footer Layout */
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
 
-        <section class="adventures">
-            <h2>Adventure Awaits You!</h2>
-            <div class="adventure-gallery">
-                <figure>
-                    <img src="images/z-excitingexpedition.jpg" alt="Exciting Expedition">
-                    <figcaption>Exciting Expedition</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/gloverbh222-cooling-off-6476414_1920.jpg" alt="Cooling Off">
-                    <figcaption>Cooling Off</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/z-wwr-blue.jpg" alt="River Rush">
-                    <figcaption>River Rush</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/z-excitingexpedition.jpg" alt="Rapid Challenge">
-                    <figcaption>Rapid Challenge</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/gloverbh222-cooling-off-6476414_1920.jpg" alt="Team Adventure">
-                    <figcaption>Team Adventure</figcaption>
-                </figure>
-            </div>
-        </section>
-    </main>
+/* Headings */
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+}
 
-    <footer>
-        <p>© 2026 White Water Rafting Co. | Magdalene Shehu</p>
-        <nav class="socialmedia">
-            <a href="https://facebook.com">
-                <img src="images/facebook.svg" alt="Facebook">
-            </a>
-            <a href="https://linkedin.com">
-                <img src="images/linkedin.svg" alt="LinkedIn">
-            </a>
-            <a href="https://instagram.com">
-                <img src="images/instagram.svg" alt="Instagram">
-            </a>
-        </nav>
-    </footer>
-</body>
+/* Navigation and Sections */
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
 
-</html>
+/* Header */
+header {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    background-color: var(--accent2-color);
+}
+
+header img {
+    width: 150px;
+    height: auto;
+    margin: 16px;
+}
+
+/* Navigation Links */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
