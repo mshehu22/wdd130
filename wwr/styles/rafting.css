@@ -113,6 +113,10 @@ section h2 {
     gap: 20px;
 }
 
+.history h2 {
+    grid-column: 1 / 4;
+}
+
 .history img {
     width: 100%;
     height: auto;
@@ -125,8 +129,13 @@ section h2 {
     flex-wrap: wrap;
 }
 
+.adventures h2 {
+    width: 100%;
+}
+
 .adventures figure {
     flex: 1 1 150px;
+    max-width: 150px;
     text-align: center;
 }
 
@@ -157,6 +166,7 @@ footer p {
 .socialmedia {
     display: flex;
     gap: 10px;
+    justify-content: flex-end;
 }
 
 .socialmedia a {
