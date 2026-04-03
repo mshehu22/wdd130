@@ -17,15 +17,19 @@ body {
     font-family: var(--body-font);
     color: var(--accent1-color);
     background-color: #f9f9f9;
+    line-height: 1.5;
 }
 
+/* Shared Layout */
 header,
 main,
 footer {
-    width: 840px;
+    max-width: 840px;
+    width: 100%;
     margin: 0 auto;
 }
 
+/* Header */
 header {
     display: grid;
     grid-template-columns: 120px 1fr;
@@ -39,10 +43,12 @@ header img {
     height: auto;
 }
 
+/* Navigation */
 nav {
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -52,12 +58,14 @@ nav a {
     padding: 10px;
 }
 
+/* Headings */
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
+/* Hero Section (About Page) */
 .hero {
     position: relative;
     margin: 20px 0;
@@ -95,6 +103,7 @@ h2 {
     margin-left: 15px;
 }
 
+/* General Sections */
 section {
     margin: 20px 0;
     padding: 20px;
@@ -106,6 +115,7 @@ section h2 {
     text-align: center;
 }
 
+/* History Section */
 .history {
     display: grid;
     grid-template-columns: 1fr 200px 1fr;
@@ -122,6 +132,7 @@ section h2 {
     height: auto;
 }
 
+/* Adventures Section */
 .adventures {
     display: flex;
     justify-content: space-between;
@@ -150,6 +161,132 @@ section h2 {
     color: var(--accent1-color);
 }
 
+/* Contact Page Hero */
+.contact-hero {
+    text-align: center;
+    margin: 20px 0;
+    padding: 30px 20px;
+    background-color: var(--accent2-color);
+}
+
+.contact-hero p {
+    margin-top: 10px;
+    color: var(--accent1-color);
+}
+
+/* Contact Info */
+.contact-info {
+    display: block;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Map */
+.map-container {
+    margin-top: 20px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+
+/* Employees Section */
+.employees {
+    display: block;
+}
+
+.employee-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.employee-gallery figure {
+    flex: 1 1 200px;
+    max-width: 240px;
+    text-align: center;
+}
+
+.employee-gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.employee-gallery figcaption {
+    margin-top: 8px;
+    font-size: 0.95rem;
+    color: var(--accent1-color);
+    font-weight: bold;
+}
+
+/* Contact Form */
+.contact-form-section form {
+    display: grid;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.form-item {
+    display: grid;
+}
+
+.form-item label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-item input,
+.form-item textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid var(--accent1-color);
+    border-radius: 4px;
+    font-family: var(--body-font);
+}
+
+fieldset {
+    border: 1px solid var(--accent1-color);
+    padding: 15px;
+}
+
+legend {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.radio-group {
+    display: grid;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.checkbox-item {
+    margin-top: 5px;
+}
+
+button[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--accent1-color);
+}
+
+/* Footer */
 footer {
     margin-top: 20px;
     border-top: 1px solid var(--accent1-color);
@@ -157,6 +294,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 footer p {
@@ -176,4 +315,39 @@ footer p {
 .socialmedia img {
     width: 30px;
     height: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 850px) {
+
+    header,
+    main,
+    footer {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .history {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .history h2 {
+        grid-column: auto;
+    }
+
+    .hero article {
+        position: static;
+        margin-top: 10px;
+    }
+
+    .hero article img {
+        float: none;
+        display: block;
+        margin: 10px auto 0;
+    }
+
+    .employee-gallery {
+        justify-content: center;
+    }
 }
