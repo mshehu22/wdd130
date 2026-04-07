@@ -1,98 +1,64 @@
-/* -----------------------------
-   White Water Rafting Site Styles
------------------------------- */
-
-/* CSS Variables */
+/* Root variables */
 :root {
-    --primary-color: #1b4965;
-    --secondary-color: #cae9ff;
-    --accent1-color: #5fa8d3;
-    --accent2-color: #62b6cb;
-    --text-color: #222222;
+    --primary-color: #1B4965;       /* dark blue */
+    --secondary-color: #CAE9FF;     /* light blue */
+    --accent1-color: #5FA8D3;       /* medium blue */
+    --accent2-color: #62B6CB;       /* teal */
+    --text-color: #222222;          /* dark gray */
+    --button-bg-color: #276033;     /* green for buttons for contrast */
 }
 
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Global styles */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #f7f9fb;
     color: var(--text-color);
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
-/* Header */
-header {
+header, footer {
     background-color: var(--primary-color);
     color: white;
-    padding: 1rem 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 1rem;
 }
 
 header img {
-    height: 60px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 1.5rem;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: var(--accent2-color);
-}
-
-/* Main content */
-main {
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-h1, h2, h3 {
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
-/* Images */
-img {
-    max-width: 100%;
+    max-width: 150px;
     height: auto;
     display: block;
 }
 
-/* Forms */
-form {
-    background-color: var(--secondary-color);
-    padding: 2rem;
-    border-radius: 8px;
-    max-width: 600px;
-    margin: 1rem 0;
-}
-
-form label {
-    display: block;
-    margin-bottom: 0.5rem;
+nav a {
+    color: white;
+    margin-right: 1rem;
+    text-decoration: none;
     font-weight: bold;
 }
 
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+h1, h2 {
+    color: var(--primary-color);
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 form input[type="text"],
-form input[type="email"],
-form textarea,
-form select {
-    width: 100%;
+form textarea {
     padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--accent1-color);
     border-radius: 4px;
+    font-size: 1rem;
 }
 
 form input[type="radio"],
@@ -101,69 +67,38 @@ form input[type="checkbox"] {
 }
 
 form button {
-    background-color: var(--accent1-color);
+    background-color: var(--button-bg-color);
     color: white;
-    border: none;
     padding: 0.75rem 1.5rem;
+    border: none;
     border-radius: 4px;
+    font-size: 1rem;
     cursor: pointer;
 }
 
 form button:hover {
-    background-color: var(--accent2-color);
+    background-color: var(--accent1-color);
 }
 
-/* Aside / Sidebar */
-aside {
-    background-color: #f1f5f9;
+/* Employees section */
+.employees {
+    margin-top: 2rem;
     padding: 1rem;
-    border-radius: 8px;
-    margin: 2rem 0;
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+}
+
+.employees p {
+    margin: 0.5rem 0;
 }
 
 /* Footer */
-footer {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 1rem 2rem;
-    margin-top: 2rem;
+footer p {
+    margin: 0;
 }
 
-footer nav.socialmedia a {
-    display: inline-block;
-    margin: 0 0.5rem;
-}
-
-footer nav.socialmedia img {
-    height: 24px;
+footer .socialmedia a img {
     width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
 }
-
-/* Trips Page Cards */
-.trip-card {
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 1rem;
-    margin-bottom: 2rem;
-}
-
-.trip-card img {
-    border-radius: 8px;
-    margin-bottom: 1rem;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav a {
-        margin-left: 0;
-        margin-right: 1rem;
-        margin-top: 0.5rem;
-    }
-        }
