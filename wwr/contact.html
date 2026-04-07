@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <img src="images/z-raftingbw.png" alt="White Water Rafting Logo" class="logo">
+        <img src="images/z-raftingbw.png" alt="White Water Rafting Logo">
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -22,58 +22,39 @@
     <main>
         <h1>Contact Us - White Water Rafting Co.</h1>
 
-        <section class="company-info">
-            <h2>Our Office</h2>
-            <p>White Water Rafting Co.</p>
-            <p>123 River Adventure Lane, Rapids City, Idaho</p>
-            <p>Phone: +1 (208) 555-1234</p>
-            <p>Email: info@whitewaterraftingco.com</p>
-        </section>
-
-        <section class="map">
-            <h2>Find Us</h2>
-            <iframe 
-                class="map-frame"
-                src="https://www.google.com/maps?q=Idaho&output=embed"
-                allowfullscreen=""
-                loading="lazy">
-            </iframe>
+        <section class="employees">
+            <h2>Meet Our Team</h2>
+            <img src="https://via.placeholder.com/150" alt="Employee placeholder" width="150" height="150">
+            <img src="https://via.placeholder.com/150" alt="John - Lead River Guide" width="150" height="150">
+            <img src="https://via.placeholder.com/150" alt="Mary - Trip Coordinator" width="150" height="150">
+            <img src="https://via.placeholder.com/150" alt="Alex - Safety Officer" width="150" height="150">
         </section>
 
         <form action="#" method="post">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your full name" required>
+            <input type="text" id="name" name="name">
 
             <label for="email">Email:</label>
-            <input type="text" id="email" name="email" placeholder="Your email address" required>
+            <input type="text" id="email" name="email">
 
             <fieldset>
-                <legend>Reason for Contact:</legend>
-                <input type="radio" id="question" name="reason" value="question" required>
-                <label for="question">Question</label>
-
-                <input type="radio" id="reservation" name="reason" value="reservation">
-                <label for="reservation">Reservation</label>
-
-                <input type="radio" id="suggestion" name="reason" value="suggestion">
-                <label for="suggestion">Suggestion</label>
+                <legend>How did you hear about us?</legend>
+                <input type="radio" id="friend" name="source" value="friend">
+                <label for="friend">Friend</label>
+                <input type="radio" id="web" name="source" value="web">
+                <label for="web">Website</label>
+                <input type="radio" id="social" name="source" value="social">
+                <label for="social">Social Media</label>
             </fieldset>
 
             <label for="message">Message:</label>
-            <textarea id="message" name="message" placeholder="Type your message here" required></textarea>
+            <textarea id="message" name="message"></textarea>
 
             <input type="checkbox" id="subscribe" name="subscribe">
             <label for="subscribe">Subscribe to newsletter</label>
 
             <button type="submit">Send Message</button>
         </form>
-
-        <section class="employees">
-            <h2>Our Team</h2>
-            <p>John - Lead River Guide</p>
-            <p>Mary - Trip Coordinator</p>
-            <p>Alex - Safety Officer</p>
-        </section>
     </main>
 
     <footer>
@@ -85,4 +66,4 @@
         </nav>
     </footer>
 </body>
-    </html>
+                </html>
