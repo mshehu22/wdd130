@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - White Water Rafting Co.</title>
     <meta name="description" content="Contact White Water Rafting Co. for questions, reservations, or suggestions.">
     <meta name="author" content="Magdalene Shehu">
-    <title>Contact Us - White Water Rafting Co.</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
@@ -24,37 +24,39 @@
 
         <section class="employees">
             <h2>Meet Our Team</h2>
-            <img src="https://via.placeholder.com/150" alt="Employee placeholder" width="150" height="150">
-            <img src="https://via.placeholder.com/150" alt="John - Lead River Guide" width="150" height="150">
-            <img src="https://via.placeholder.com/150" alt="Mary - Trip Coordinator" width="150" height="150">
-            <img src="https://via.placeholder.com/150" alt="Alex - Safety Officer" width="150" height="150">
+            <img src="images/employee1.png" alt="Employee placeholder">
+            <img src="images/employee2.png" alt="John - Lead River Guide">
+            <img src="images/employee3.png" alt="Mary - Trip Coordinator">
+            <img src="images/employee4.png" alt="Alex - Safety Officer">
         </section>
 
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
+        <section class="contact-form">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
 
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
 
-            <fieldset>
-                <legend>How did you hear about us?</legend>
-                <input type="radio" id="friend" name="source" value="friend">
-                <label for="friend">Friend</label>
-                <input type="radio" id="web" name="source" value="web">
-                <label for="web">Website</label>
-                <input type="radio" id="social" name="source" value="social">
-                <label for="social">Social Media</label>
-            </fieldset>
+                <p>Reason for Contact:</p>
+                <label><input type="radio" name="reason" value="question"> Question</label>
+                <label><input type="radio" name="reason" value="reservation"> Reservation</label>
+                <label><input type="radio" name="reason" value="suggestion"> Suggestion</label>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
 
-            <input type="checkbox" id="subscribe" name="subscribe">
-            <label for="subscribe">Subscribe to newsletter</label>
+                <label><input type="checkbox" name="subscribe"> Subscribe to newsletter</label>
 
-            <button type="submit">Send Message</button>
-        </form>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section class="map">
+            <h2>Find Us</h2>
+            <!-- If you don’t have Google Maps, you can just leave this as placeholder -->
+            <p>Map placeholder - visit us at our office location.</p>
+        </section>
     </main>
 
     <footer>
