@@ -22,16 +22,34 @@
     <main>
         <h1>Contact Us - White Water Rafting Co.</h1>
 
+        <section class="company-info">
+            <h2>Our Office</h2>
+            <p>White Water Rafting Co.</p>
+            <p>123 River Adventure Lane, Rapids City, Idaho</p>
+            <p>Phone: +1 (208) 555-1234</p>
+            <p>Email: info@whitewaterraftingco.com</p>
+        </section>
+
+        <section class="map">
+            <h2>Find Us</h2>
+            <iframe 
+                class="map-frame"
+                src="https://www.google.com/maps?q=Idaho&output=embed"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </section>
+
         <form action="#" method="post">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your full name">
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
 
             <label for="email">Email:</label>
-            <input type="text" id="email" name="email" placeholder="Your email address">
+            <input type="text" id="email" name="email" placeholder="Your email address" required>
 
             <fieldset>
                 <legend>Reason for Contact:</legend>
-                <input type="radio" id="question" name="reason" value="question">
+                <input type="radio" id="question" name="reason" value="question" required>
                 <label for="question">Question</label>
 
                 <input type="radio" id="reservation" name="reason" value="reservation">
@@ -42,13 +60,20 @@
             </fieldset>
 
             <label for="message">Message:</label>
-            <textarea id="message" name="message" placeholder="Type your message here"></textarea>
+            <textarea id="message" name="message" placeholder="Type your message here" required></textarea>
 
             <input type="checkbox" id="subscribe" name="subscribe">
             <label for="subscribe">Subscribe to newsletter</label>
 
             <button type="submit">Send Message</button>
         </form>
+
+        <section class="employees">
+            <h2>Our Team</h2>
+            <p>John - Lead River Guide</p>
+            <p>Mary - Trip Coordinator</p>
+            <p>Alex - Safety Officer</p>
+        </section>
     </main>
 
     <footer>
