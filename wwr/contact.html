@@ -1,110 +1,116 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact White Water Rafting Co. for questions, reservations, or suggestions.">
-  <meta name="author" content="Magdalene Shehu">
-  <title>Contact Us - White Water Rafting Co.</title>
-  <link rel="stylesheet" href="styles/rafting.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - White Water Rafting Co.</title>
+    <meta name="description" content="Contact White Water Rafting Co. for questions, reservations, or suggestions.">
+    <meta name="author" content="Magdalene Shehu">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
-  <header>
-    <img src="images/z-raftingbw.png" alt="White Water Rafting Logo">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="trips.html">Trips</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
-  </header>
+    <header>
+        <img src="images/z-raftingbw.png" alt="White Water Rafting Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
 
-  <main>
-    <h1>Contact Us - White Water Rafting Co.</h1>
+    <main>
+        <h1>Contact Us - White Water Rafting Co.</h1>
 
-    <section class="company-info">
-      <h2>Our Contact Information</h2>
-      <p><strong>Address:</strong> 123 Riverbank Road, Bauchi, Nigeria</p>
-      <p><strong>Phone:</strong> +234 123 456 7890</p>
-      <p><strong>Email:</strong> info@wwraftingco.com</p>
-    </section>
+        <section class="company-info">
+            <h2>Company Information</h2>
+            <p><strong>Address:</strong> 123 River Adventure Road, Rapids City, Idaho, USA</p>
+            <p><strong>Phone:</strong> +1 (208) 555-1234</p>
+            <p><strong>Email:</strong> info@whitewaterraftingco.com</p>
+        </section>
 
-    <section class="map">
-      <h2>Find Us</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.0000!2d9.5000!3d10.2667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11aaba0000000000%3A0x0!2sBauchi%2C%20Nigeria!5e0!3m2!1sen!2sus!4v1680635600000!5m2!1sen!2sus"
-        width="100%"
-        height="300"
-        allowfullscreen=""
-        loading="lazy"
-        title="Map showing White Water Rafting Co. location in Bauchi, Nigeria">
-      </iframe>
-    </section>
+        <section class="map">
+            <h2>Find Us</h2>
+            <iframe 
+                src="https://www.google.com/maps?q=Idaho&output=embed" 
+                width="600" 
+                height="300" 
+                loading="lazy" 
+                allowfullscreen 
+                title="White Water Rafting Co. location map">
+            </iframe>
+        </section>
 
-    <section class="employees">
-      <h2>Meet Our Team</h2>
-      <figure>
-        <img src="images/placeholder1.png" alt="John - Lead River Guide">
-        <figcaption>John – Lead River Guide</figcaption>
-      </figure>
-      <figure>
-        <img src="images/placeholder2.png" alt="Mary - Trip Coordinator">
-        <figcaption>Mary – Trip Coordinator</figcaption>
-      </figure>
-      <figure>
-        <img src="images/placeholder3.png" alt="Alex - Safety Officer">
-        <figcaption>Alex – Safety Officer</figcaption>
-      </figure>
-    </section>
+        <section class="employees">
+            <h2>Meet Our Team</h2>
+            <figure>
+                <img src="images/placeholder1.png" alt="John - Lead River Guide">
+                <figcaption>John - Lead River Guide</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder2.png" alt="Mary - Trip Coordinator">
+                <figcaption>Mary - Trip Coordinator</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder3.png" alt="Alex - Safety Officer">
+                <figcaption>Alex - Safety Officer</figcaption>
+            </figure>
+        </section>
 
-    <section class="contact-form">
-      <h2>Send Us a Message</h2>
-      <form action="#" method="post">
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" required>
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
 
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" required>
+                <div>
+                    <label for="useremail">Email Address</label>
+                    <input type="email" id="useremail" name="useremail" required>
+                </div>
 
-        <fieldset>
-          <legend>Purpose of Your Message:</legend>
+                <fieldset>
+                    <legend>Purpose of Message</legend>
 
-          <input type="radio" id="general" name="purpose" value="general inquiry" required>
-          <label for="general">General Inquiry</label>
+                    <input type="radio" id="general" name="purpose" value="general">
+                    <label for="general">General Inquiry</label>
 
-          <input type="radio" id="reservation" name="purpose" value="reservation question">
-          <label for="reservation">Reservation Question</label>
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                    <label for="reservation">Reservation Question</label>
 
-          <input type="radio" id="suggestion" name="purpose" value="website suggestion">
-          <label for="suggestion">Website Suggestion</label>
-        </fieldset>
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+                </fieldset>
 
-        <label for="message">Your Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
 
-        <div class="checkbox-group">
-          <input type="checkbox" id="newsletter" name="newsletter">
-          <label for="newsletter">Please subscribe me to the monthly newsletter</label>
-        </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                </div>
 
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-  </main>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
 
-  <footer>
-    <p>© 2026 White Water Rafting Co. | Magdalene Shehu</p>
-    <nav class="socialmedia">
-      <a href="https://facebook.com">
-        <img src="images/facebook.svg" alt="Facebook social media link">
-      </a>
-      <a href="https://linkedin.com">
-        <img src="images/linkedin.svg" alt="LinkedIn social media link">
-      </a>
-      <a href="https://instagram.com">
-        <img src="images/instagram.svg" alt="Instagram social media link">
-      </a>
-    </nav>
-  </footer>
+    <footer>
+        <p>© 2026 White Water Rafting Co. | Magdalene Shehu</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="Facebook social media link">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.svg" alt="LinkedIn social media link">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="Instagram social media link">
+            </a>
+        </nav>
+    </footer>
 </body>
-        </html>
+  </html>
