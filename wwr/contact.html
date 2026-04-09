@@ -22,96 +22,60 @@
     <main>
         <h1>Contact Us</h1>
 
-        <section class="company-info">
-            <h2>Company Information</h2>
-            <p><strong>Address:</strong> 123 River Rapids Road, Adventure Valley, Idaho</p>
-            <p><strong>Phone:</strong> +1 (208) 555-1234</p>
-            <p><strong>Email:</strong> info@whitewaterraftingco.com</p>
-        </section>
-
-        <section class="map">
-            <h2>Our Location</h2>
-            <iframe
-                src="https://www.google.com/maps?q=Idaho&output=embed"
-                title="Map showing White Water Rafting Company location"
-                loading="lazy"
-                allowfullscreen>
-            </iframe>
-        </section>
-
-        <section class="employees">
-            <h2>Meet Our Team</h2>
-
-            <figure>
-                <img src="images/mary.jpeg" alt="Mary, Trip Coordinator">
-                <figcaption>Mary - Trip Coordinator</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/john.jpeg" alt="John, Lead River Guide">
-                <figcaption>John - Lead River Guide</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/alex.jpeg" alt="Alex, Safety Officer">
-                <figcaption>Alex - Safety Officer</figcaption>
-            </figure>
+        <section class="contact-info">
+            <h2>Our Team</h2>
+            <div class="team">
+                <figure>
+                    <img src="images/mary.jpeg" alt="Mary, Trip Coordinator">
+                    <figcaption>MARY - Trip Coordinator</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/john.jpeg" alt="John, Lead River Guide">
+                    <figcaption>JOHN - Lead River Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/alex.jpeg" alt="Alex, Safety Officer">
+                    <figcaption>ALEX - Safety Officer</figcaption>
+                </figure>
+            </div>
         </section>
 
         <section class="contact-form">
             <h2>Send Us a Message</h2>
             <form>
-                <label for="fullname">Full Name</label>
-                <input type="text" id="fullname" name="fullname" required>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
 
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
 
-                <fieldset>
-                    <legend>Purpose of Message</legend>
+                <p>Trip Preference:</p>
+                <label><input type="radio" id="family" name="trip" value="family" required> Family Adventure</label>
+                <label><input type="radio" id="whitewater" name="trip" value="whitewater"> Whitewater Challenge</label>
+                <label><input type="radio" id="sunset" name="trip" value="sunset"> Sunset Float</label>
 
-                    <div class="radio-option">
-                        <input type="radio" id="general" name="purpose" value="general" required>
-                        <label for="general">General Inquiry</label>
-                    </div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
 
-                    <div class="radio-option">
-                        <input type="radio" id="reservation" name="purpose" value="reservation">
-                        <label for="reservation">Reservation Question</label>
-                    </div>
-
-                    <div class="radio-option">
-                        <input type="radio" id="website" name="purpose" value="website">
-                        <label for="website">Website Suggestion</label>
-                    </div>
-                </fieldset>
-
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <div class="checkbox-option">
-                    <input type="checkbox" id="newsletter" name="newsletter">
-                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
-                </div>
+                <label><input type="checkbox" id="subscribe" name="subscribe"> Subscribe to newsletter</label>
 
                 <button type="submit">Send Message</button>
             </form>
+        </section>
+
+        <section class="location">
+            <h2>Find Us</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map to White Water Rafting Co."></iframe>
         </section>
     </main>
 
     <footer>
         <p>© 2026 White Water Rafting Co. | Magdalene Shehu</p>
         <nav class="socialmedia">
-            <a href="https://facebook.com">
-                <img src="images/facebook.svg" alt="Facebook">
-            </a>
-            <a href="https://linkedin.com">
-                <img src="images/linkedin.svg" alt="LinkedIn">
-            </a>
-            <a href="https://instagram.com">
-                <img src="images/instagram.svg" alt="Instagram">
-            </a>
+            <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook social media link"></a>
+            <a href="https://linkedin.com"><img src="images/linkedin.svg" alt="LinkedIn social media link"></a>
+            <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram social media link"></a>
         </nav>
     </footer>
 </body>
-                        </html>
+                    </html>
