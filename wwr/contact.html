@@ -21,44 +21,43 @@
 
     <main>
         <h1>Contact Us | White Water Rafting Co.</h1>
-
+        
         <form action="#" method="post">
-            <label for="fullname">Full Name:</label>
-            <input type="text" id="fullname" name="fullname" required>
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
+            <!-- Email -->
             <label for="email">Email:</label>
             <input type="text" id="email" name="email" required>
 
-            <p>Trip Type:</p>
+            <!-- Trip Level Radio Buttons -->
+            <p>Choose your trip level:</p>
             <label for="beginner">
-                <input type="radio" name="trip" id="beginner" value="beginner" required> Beginner
+                <input type="radio" id="beginner" name="trip" value="beginner" required> Beginner
             </label>
             <label for="intermediate">
-                <input type="radio" name="trip" id="intermediate" value="intermediate"> Intermediate
+                <input type="radio" id="intermediate" name="trip" value="intermediate"> Intermediate
             </label>
             <label for="advanced">
-                <input type="radio" name="trip" id="advanced" value="advanced"> Advanced
+                <input type="radio" id="advanced" name="trip" value="advanced"> Advanced
             </label>
 
+            <!-- Message -->
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="5" required></textarea>
 
+            <!-- Subscribe Checkbox -->
             <label for="subscribe">
-                <input type="checkbox" id="subscribe" name="subscribe"> Subscribe to our newsletter
+                <input type="checkbox" id="subscribe" name="subscribe"> Subscribe to newsletter
             </label>
 
+            <!-- Submit Button -->
             <button type="submit">Send Message</button>
         </form>
 
-        <section class="map-container">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!..." 
-                class="map"
-                allowfullscreen
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </section>
+        <!-- Map -->
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=..." allowfullscreen="" loading="lazy"></iframe>
     </main>
 
     <footer>
