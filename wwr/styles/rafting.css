@@ -7,23 +7,20 @@ body {
     background-color: #ffffff;
 }
 
-header {
+header, footer {
     background-color: #1d3557;
-    padding: 1rem;
     color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 1rem;
 }
 
 header img {
-    height: 60px;
+    max-width: 150px;
 }
 
 nav a {
     color: #ffffff;
     text-decoration: none;
-    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 nav a:hover {
@@ -34,7 +31,7 @@ main {
     padding: 2rem;
 }
 
-h1, h2 {
+h1 {
     color: #1d3557;
 }
 
@@ -43,65 +40,59 @@ form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    margin: 2rem 0;
+    max-width: 500px;
+}
+
+label {
+    font-weight: bold;
 }
 
 input[type="text"], textarea {
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
 }
 
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+/* Submit Button */
 button {
-    background-color: #c1121f;
-    color: #ffffff;
-    padding: 0.7rem 1.2rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: #b71c1c; /* Dark red for contrast */
+    color: #ffffff; /* White text for accessibility */
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #9b0f19; /* darkened for better contrast */
+    background-color: #8c1414;
 }
 
-/* Map Section */
-.location {
-    margin: 2rem 0;
+/* Map Styles */
+.map-container {
+    margin-top: 2rem;
 }
 
-.location h2 {
-    margin-bottom: 1rem;
-}
-
-.location iframe {
+.map {
+    width: 100%;
+    height: 350px;
+    border: 0;
     border-radius: 5px;
 }
 
-/* Team Section */
-.team {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
+/* Footer Styles */
+footer p {
+    margin: 0;
 }
 
-.team img {
-    width: 150px;
-    border-radius: 5px;
+footer nav.socialmedia a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5rem;
 }
-
-/* Footer */
-footer {
-    background-color: #1d3557;
-    color: #ffffff;
-    text-align: center;
-    padding: 1rem 0;
-}
-
-footer .socialmedia a {
-    margin: 0 0.5rem;
-}
-
-footer .socialmedia img {
-    height: 24px;
-    }
