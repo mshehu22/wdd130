@@ -22,41 +22,36 @@
     <main>
         <h1>Contact Us | White Water Rafting Co.</h1>
 
-        <!-- Location Map -->
-        <section class="location">
-            <h2>Our Location</h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.27991498806!2d-74.25986768802603!3d40.69767006398398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c250b25f8965e5%3A0x3aa05a2c1f5dfe2f!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sng!4v1696467500000!5m2!1sen!2sng"
-                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </section>
-
-        <!-- Contact Form -->
         <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
 
             <label for="email">Email:</label>
             <input type="text" id="email" name="email" required>
 
             <p>Trip Type:</p>
-            <label><input type="radio" name="trip" value="beginner"> Beginner</label>
-            <label><input type="radio" name="trip" value="intermediate"> Intermediate</label>
-            <label><input type="radio" name="trip" value="advanced"> Advanced</label>
+            <label for="beginner"><input type="radio" name="trip" id="beginner" value="beginner" required> Beginner</label>
+            <label for="intermediate"><input type="radio" name="trip" id="intermediate" value="intermediate"> Intermediate</label>
+            <label for="advanced"><input type="radio" name="trip" id="advanced" value="advanced"> Advanced</label>
 
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="5" required></textarea>
 
-            <label><input type="checkbox" name="subscribe"> Subscribe to our newsletter</label>
+            <label for="subscribe">
+                <input type="checkbox" id="subscribe" name="subscribe"> Subscribe to our newsletter
+            </label>
 
             <button type="submit">Send Message</button>
         </form>
 
-        <!-- Team Images -->
-        <section class="team">
-            <img src="images/mary.jpeg" alt="Mary, Trip Coordinator">
-            <img src="images/john.jpeg" alt="John, Lead River Guide">
-            <img src="images/alex.jpeg" alt="Alex, Safety Officer">
+        <section class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!..." 
+                class="map" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </section>
     </main>
 
@@ -69,4 +64,4 @@
         </nav>
     </footer>
 </body>
-                </html>
+</html>
