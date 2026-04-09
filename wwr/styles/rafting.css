@@ -1,4 +1,4 @@
-/* GENERAL PAGE STYLES */
+/* GENERAL */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -32,7 +32,7 @@ main {
   padding: 20px;
 }
 
-/* TEAM IMAGES (THIS FIXES YOUR BIG PICTURES) */
+/* TEAM IMAGES (FIXES BIG JOHN/MARY/ALEX) */
 figure {
   display: inline-block;
   text-align: center;
@@ -40,7 +40,7 @@ figure {
 }
 
 figure img {
-  width: 150px;
+  width: 140px;
   height: auto;
   border-radius: 8px;
 }
@@ -61,6 +61,7 @@ footer {
   padding: 15px;
 }
 
+/* SOCIAL ICONS */
 .socialmedia img {
   width: 25px;
   height: 25px;
