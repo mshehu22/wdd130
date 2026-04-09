@@ -1,38 +1,60 @@
-/* GENERAL */
+/* =========================
+   GENERAL STYLES
+========================= */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   color: #222;
+  background-color: #ffffff;
 }
 
-/* HEADER */
+/* =========================
+   HEADER (FIX CONTRAST ISSUE)
+========================= */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #1d3557;
   padding: 10px;
+  color: white;
 }
 
+/* LOGO */
 header img {
   width: 120px;
   height: auto;
 }
 
-/* NAV */
-nav a {
+/* NAV LINKS (FIXES AUDIT ISSUE) */
+header nav a {
   color: white;
   margin: 0 10px;
   text-decoration: none;
+  font-weight: bold;
 }
 
-/* MAIN */
+/* Hover effect */
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* FORCE HEADER TEXT TO WHITE (IMPORTANT FIX) */
+header, header a {
+  color: white;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
 main {
   padding: 20px;
 }
 
-/* TEAM IMAGES (FIXES BIG JOHN/MARY/ALEX) */
+/* =========================
+   TEAM SECTION (FIX IMAGE SIZE)
+========================= */
 figure {
   display: inline-block;
   text-align: center;
@@ -40,12 +62,14 @@ figure {
 }
 
 figure img {
-  width: 140px;
+  width: 140px;   /* FIXES BIG JOHN/MARY/ALEX */
   height: auto;
   border-radius: 8px;
 }
 
-/* FORM */
+/* =========================
+   FORM STYLING
+========================= */
 form {
   display: flex;
   flex-direction: column;
@@ -53,7 +77,15 @@ form {
   max-width: 400px;
 }
 
-/* FOOTER */
+input, textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* =========================
+   FOOTER
+========================= */
 footer {
   background-color: #1d3557;
   color: white;
