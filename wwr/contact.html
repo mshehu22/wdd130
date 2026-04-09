@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | White Water Rafting Co.</title>
     <meta name="description" content="Contact White Water Rafting Co. for questions, reservations, or trip planning.">
     <meta name="author" content="Magdalene Shehu">
-    <title>Contact Us | White Water Rafting Co.</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
@@ -18,50 +18,43 @@
             <a href="contact.html">Contact Us</a>
         </nav>
     </header>
-
     <main>
         <h1>Contact Us | White Water Rafting Co.</h1>
         <form action="#" method="post">
-            <label for="fullname">Full Name:</label>
-            <input type="text" id="fullname" name="fullname" required>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="text" id="email" name="email" required>
 
-            <p>Preferred Contact Method:</p>
-            <input type="radio" id="contact-email" name="contact-method" value="email" required>
-            <label for="contact-email">Email</label>
-            <input type="radio" id="contact-phone" name="contact-method" value="phone">
-            <label for="contact-phone">Phone</label>
-            <input type="radio" id="contact-text" name="contact-method" value="text">
-            <label for="contact-text">Text Message</label>
+            <fieldset>
+                <legend>How can we help you?</legend>
+                <input type="radio" id="question" name="reason" value="question">
+                <label for="question">Question</label>
+
+                <input type="radio" id="reservation" name="reason" value="reservation">
+                <label for="reservation">Reservation</label>
+
+                <input type="radio" id="feedback" name="reason" value="feedback">
+                <label for="feedback">Feedback</label>
+            </fieldset>
 
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="5" required></textarea>
 
-            <input type="checkbox" id="newsletter" name="newsletter">
-            <label for="newsletter">Subscribe to newsletter</label>
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">Subscribe to our newsletter</label>
 
             <button type="submit">Send Message</button>
         </form>
 
         <section class="team">
-            <h2>Our Team</h2>
-            <div class="team-member">
-                <img src="images/mary.jpeg" alt="Mary, Trip Coordinator">
-                <p>Mary, Trip Coordinator</p>
-            </div>
-            <div class="team-member">
-                <img src="images/john.jpeg" alt="John, Lead River Guide">
-                <p>John, Lead River Guide</p>
-            </div>
-            <div class="team-member">
-                <img src="images/alex.jpeg" alt="Alex, Safety Officer">
-                <p>Alex, Safety Officer</p>
-            </div>
+            <h2>Meet Our Team</h2>
+            <img src="images/mary.jpeg" alt="Mary, Trip Coordinator">
+            <img src="images/john.jpeg" alt="John, Lead River Guide">
+            <img src="images/alex.jpeg" alt="Alex, Safety Officer">
         </section>
     </main>
-
     <footer>
         <p>© 2026 White Water Rafting Co. | Magdalene Shehu</p>
         <nav class="socialmedia">
@@ -71,4 +64,4 @@
         </nav>
     </footer>
 </body>
-    </html>
+                            </html>
