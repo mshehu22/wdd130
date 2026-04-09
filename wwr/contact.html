@@ -21,43 +21,43 @@
 
     <main>
         <h1>Contact Us | White Water Rafting Co.</h1>
-        
-        <form action="#" method="post">
-            <!-- Name -->
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
 
-            <!-- Email -->
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email" required>
+        <section class="contact-form">
+            <form action="#" method="post">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
 
-            <!-- Trip Level Radio Buttons -->
-            <p>Choose your trip level:</p>
-            <label for="beginner">
-                <input type="radio" id="beginner" name="trip" value="beginner" required> Beginner
-            </label>
-            <label for="intermediate">
-                <input type="radio" id="intermediate" name="trip" value="intermediate"> Intermediate
-            </label>
-            <label for="advanced">
-                <input type="radio" id="advanced" name="trip" value="advanced"> Advanced
-            </label>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-            <!-- Message -->
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+                <p>Preferred Trip:</p>
+                <label><input type="radio" id="trip1" name="trip" value="Beginner"> Beginner</label>
+                <label><input type="radio" id="trip2" name="trip" value="Intermediate"> Intermediate</label>
+                <label><input type="radio" id="trip3" name="trip" value="Advanced"> Advanced</label>
 
-            <!-- Subscribe Checkbox -->
-            <label for="subscribe">
-                <input type="checkbox" id="subscribe" name="subscribe"> Subscribe to newsletter
-            </label>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
 
-            <!-- Submit Button -->
-            <button type="submit">Send Message</button>
-        </form>
+                <label><input type="checkbox" id="newsletter" name="newsletter"> Subscribe to our newsletter</label>
 
-        <!-- Map -->
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=..." allowfullscreen="" loading="lazy"></iframe>
+                <button type="submit">Send Your Message</button>
+            </form>
+        </section>
+
+        <section class="team">
+            <div class="team-member">
+                <img src="images/mary.jpeg" alt="Mary, Trip Coordinator">
+                <p>Mary, Trip Coordinator</p>
+            </div>
+            <div class="team-member">
+                <img src="images/john.jpeg" alt="John, Lead River Guide">
+                <p>John, Lead River Guide</p>
+            </div>
+            <div class="team-member">
+                <img src="images/alex.jpeg" alt="Alex, Safety Officer">
+                <p>Alex, Safety Officer</p>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -69,4 +69,4 @@
         </nav>
     </footer>
 </body>
-                </html>
+                           </html>
