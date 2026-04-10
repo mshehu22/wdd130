@@ -3,112 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Contact Us | White Water Rafting Co.</title>
-
   <meta name="description" content="Contact White Water Rafting Co. for reservations, enquiries, trip planning, and customer support.">
   <meta name="author" content="Magdalene Shehu">
-
   <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
 
-  <header>
-    <img src="images/z-raftingbw.png" alt="White Water Rafting Company logo">
+<header>
+  <img src="images/z-raftingbw.png" alt="White Water Rafting Company logo">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="trips.html">Trips</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+</header>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="trips.html">Trips</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
-  </header>
+<main>
 
-  <main>
-    <h1>Contact White Water Rafting Co.</h1>
+  <h1>Contact White Water Rafting Co.</h1>
 
-    <!-- CONTACT FORM -->
-    <form>
-      <label for="fullname">Full Name</label>
-      <input type="text" id="fullname" name="fullname" required>
+  <!-- EMPLOYEES -->
+  <section class="employees">
+    <figure>
+      <img src="images/john.jpeg" alt="John - Senior River Guide at White Water Rafting Co.">
+      <figcaption>John - Senior River Guide</figcaption>
+    </figure>
 
-      <p>Preferred Contact Method</p>
+    <figure>
+      <img src="images/mary.jpeg" alt="Mary - Safety Coordinator at White Water Rafting Co.">
+      <figcaption>Mary - Safety Coordinator</figcaption>
+    </figure>
 
-      <!-- FIXED RADIO BUTTONS (ADDED IDS) -->
-      <label for="email">
-        <input type="radio" id="email" name="contact_method" value="email">
-        Email
-      </label>
+    <figure>
+      <img src="images/alex.jpeg" alt="Alex - Tour Manager at White Water Rafting Co.">
+      <figcaption>Alex - Tour Manager</figcaption>
+    </figure>
+  </section>
 
-      <label for="phone">
-        <input type="radio" id="phone" name="contact_method" value="phone">
-        Phone
-      </label>
+  <!-- CONTACT FORM -->
+  <form>
+    <label for="fullname">Full Name</label>
+    <input type="text" id="fullname" name="fullname">
 
-      <label for="text">
-        <input type="radio" id="text" name="contact_method" value="text">
-        Text Message
-      </label>
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email">
 
-      <label for="message">Message</label>
-      <textarea id="message" name="message"></textarea>
+    <p>Purpose of Message:</p>
 
-      <label for="subscribe">
-        <input type="checkbox" id="subscribe" name="subscribe">
-        Subscribe to trip updates
-      </label>
+    <!-- ✅ FIXED (IDs ADDED HERE — YOUR ERROR) -->
+    <label for="general">
+      <input type="radio" id="general" name="purpose" value="general"> General Inquiry
+    </label>
 
-      <button type="submit">Send Inquiry</button>
-    </form>
+    <label for="reservation">
+      <input type="radio" id="reservation" name="purpose" value="reservation"> Reservation
+    </label>
 
-    <!-- EMPLOYEES (HORIZONTAL + SMALL) -->
-    <section class="employees">
-      <figure>
-        <img src="images/john.jpeg" alt="John - Senior River Guide at White Water Rafting Co.">
-        <figcaption>John - Senior River Guide</figcaption>
-      </figure>
+    <label for="feedback">
+      <input type="radio" id="feedback" name="purpose" value="feedback"> Feedback
+    </label>
 
-      <figure>
-        <img src="images/mary.jpeg" alt="Mary - Safety Coordinator at White Water Rafting Co.">
-        <figcaption>Mary - Safety Coordinator</figcaption>
-      </figure>
+    <label for="message">Message</label>
+    <textarea id="message" name="message"></textarea>
 
-      <figure>
-        <img src="images/alex.jpeg" alt="Alex - Tour Manager at White Water Rafting Co.">
-        <figcaption>Alex - Tour Manager</figcaption>
-      </figure>
-    </section>
+    <label for="subscribe">
+      <input type="checkbox" id="subscribe" name="subscribe"> Subscribe to newsletter
+    </label>
 
-    <!-- MAP (WORKING VERSION - NO ERRORS) -->
-    <section class="map">
-      <iframe 
-        src="https://www.google.com/maps?q=Abuja,Nigeria&output=embed"
-        width="100%" 
-        height="300" 
-        loading="lazy">
-      </iframe>
-    </section>
+    <button type="submit">Send Message</button>
+  </form>
 
-  </main>
+  <!-- MAP (WORKING — NO INLINE CSS) -->
+  <section class="map">
+    <iframe 
+      src="https://maps.google.com/maps?q=Abuja,Nigeria&output=embed"
+      loading="lazy"
+      allowfullscreen>
+    </iframe>
+  </section>
 
-  <footer>
-    <p>© 2026 White Water Rafting Co. | Magdalene Shehu | All rights reserved</p>
+</main>
 
-    <nav class="socialmedia">
-      <a href="https://facebook.com">
-        <img src="images/facebook.svg" alt="Facebook social media page">
-      </a>
+<footer>
+  <p>© 2026 White Water Rafting Co. | Magdalene Shehu | All rights reserved</p>
 
-      <a href="https://linkedin.com">
-        <img src="images/linkedin.svg" alt="LinkedIn professional network page">
-      </a>
-
-      <a href="https://instagram.com">
-        <img src="images/instagram.svg" alt="Instagram photo sharing platform">
-      </a>
-    </nav>
-  </footer>
+  <nav class="socialmedia">
+    <a href="#"><img src="images/facebook.svg" alt="Facebook social media page"></a>
+    <a href="#"><img src="images/linkedin.svg" alt="LinkedIn professional network page"></a>
+    <a href="#"><img src="images/instagram.svg" alt="Instagram photo sharing platform"></a>
+  </nav>
+</footer>
 
 </body>
-</html>
+  </html>
