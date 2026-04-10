@@ -1,21 +1,28 @@
-/* RESET */
+/* =========================
+   RESET
+========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* BODY */
+/* =========================
+   BODY
+========================= */
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #f4f7fb;
   color: #1f3a5f;
   line-height: 1.6;
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 header {
   background-color: #1f3a5f;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,9 +31,12 @@ header {
 
 header img {
   width: 80px;
+  height: auto;
 }
 
-/* NAV */
+/* =========================
+   NAVIGATION
+========================= */
 nav {
   display: flex;
   gap: 15px;
@@ -38,33 +48,53 @@ nav a {
   font-weight: bold;
 }
 
-/* MAIN */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   MAIN LAYOUT
+========================= */
 main {
   padding: 20px;
 }
 
-/* CONTACT INFO */
-.contact-info {
-  background: white;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
+/* =========================
+   HEADINGS
+========================= */
+h1, h2 {
+  margin-bottom: 10px;
 }
 
-/* MAP FIX */
+/* =========================
+   CONTACT INFO SECTION
+========================= */
+.contact-info {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+/* =========================
+   MAP
+========================= */
 .map {
   width: 100%;
   height: 250px;
-  margin-top: 10px;
   border: 0;
+  margin-top: 10px;
+  border-radius: 8px;
 }
 
-/* FORM */
+/* =========================
+   FORM SECTION
+========================= */
 .form-section {
-  background: white;
+  background-color: white;
   padding: 20px;
   margin-bottom: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 form {
@@ -78,47 +108,70 @@ textarea {
   padding: 10px;
   border: 1px solid #ccc;
   width: 100%;
+  border-radius: 5px;
 }
 
-/* BUTTON */
+textarea {
+  min-height: 100px;
+}
+
+/* =========================
+   RADIO + CHECKBOX
+========================= */
+label {
+  margin-top: 5px;
+}
+
+/* =========================
+   BUTTON
+========================= */
 button {
   background-color: #16324a;
   color: white;
   padding: 10px;
   border: none;
   cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
-/* TEAM SECTION (THIS FIXES YOUR ISSUE 👇) */
+button:hover {
+  background-color: #1f3a5f;
+}
+
+/* =========================
+   TEAM SECTION
+   (FIXED: horizontal layout)
+========================= */
 .team {
-  background: white;
+  background-color: white;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
-/* IMPORTANT: makes images horizontal */
 .team-grid {
   display: flex;
-  justify-content: space-between;
-  gap: 15px;
+  justify-content: center;
+  gap: 25px;
   flex-wrap: wrap;
+  margin-top: 15px;
 }
 
 .team-grid figure {
   text-align: center;
-  flex: 1;
-  min-width: 150px;
 }
 
-/* FIX IMAGE SIZE (YOUR MAIN ISSUE) */
+/* FIX IMAGE SIZE ISSUE */
 .team-grid img {
-  width: 100%;
-  max-width: 150px;
-  height: auto;
-  border-radius: 8px;
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 footer {
   background-color: #1f3a5f;
   color: white;
@@ -129,9 +182,12 @@ footer {
 
 .socialmedia {
   margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
 .socialmedia img {
   width: 25px;
-  margin: 0 5px;
-  }
+  height: auto;
+    }
