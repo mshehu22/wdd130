@@ -6,7 +6,7 @@
 
   <title>Contact Us | White Water Rafting Co.</title>
 
-  <meta name="description" content="Contact White Water Rafting Co. for reservations, trip planning, safety inquiries and general support.">
+  <meta name="description" content="Contact White Water Rafting Co. for reservations, enquiries, trip planning, and customer support.">
   <meta name="author" content="Magdalene Shehu">
 
   <link rel="stylesheet" href="styles/rafting.css">
@@ -29,7 +29,9 @@
 
 <h1>Contact White Water Rafting Co.</h1>
 
+<!-- COMPANY INFO -->
 <section class="company-info">
+
   <h2>Company Information</h2>
 
   <p><strong>Address:</strong> 123 River Road, Adventure City</p>
@@ -37,15 +39,18 @@
   <p><strong>Email:</strong> info@whitewaterrafting.com</p>
 
   <iframe
+    title="White Water Rafting Location Map"
     src="https://www.google.com/maps?q=abuja&output=embed"
     width="100%"
     height="300">
   </iframe>
+
 </section>
 
+<!-- EMPLOYEES (BELOW INFO, ABOVE FORM) -->
 <section class="employees">
 
-  <h2>Our Team</h2>
+  <h2>Meet Our Team</h2>
 
   <figure>
     <img src="images/john.jpeg" alt="John - Senior River Guide">
@@ -64,9 +69,10 @@
 
 </section>
 
+<!-- ENQUIRY FORM -->
 <section class="contact-form">
 
-<h2>Send Us a Message</h2>
+<h2>Send Us an Enquiry</h2>
 
 <form>
 
@@ -76,24 +82,27 @@
   <label for="email">Email Address</label>
   <input type="email" id="email" name="email">
 
-  <p>Preferred Contact Method</p>
+  <fieldset>
+    <legend>Purpose of Message</legend>
 
-  <input type="radio" id="emailradio" name="contact_method" value="email">
-  <label for="emailradio">Email</label>
+    <input type="radio" id="general" name="purpose" value="general">
+    <label for="general">General Inquiry</label>
 
-  <input type="radio" id="phoneradio" name="contact_method" value="phone">
-  <label for="phoneradio">Phone</label>
+    <input type="radio" id="reservation" name="purpose" value="reservation">
+    <label for="reservation">Reservation Question</label>
 
-  <input type="radio" id="textradio" name="contact_method" value="text">
-  <label for="textradio">Text Message</label>
+    <input type="radio" id="website" name="purpose" value="website">
+    <label for="website">Website Suggestion</label>
+
+  </fieldset>
 
   <label for="message">Message</label>
   <textarea id="message" name="message"></textarea>
 
-  <input type="checkbox" id="subscribe" name="subscribe">
-  <label for="subscribe">Subscribe to trip updates</label>
+  <input type="checkbox" id="newsletter" name="newsletter">
+  <label for="newsletter">Please subscribe me to the monthly newsletter</label>
 
-  <button type="submit">Send Enquiry to Team</button>
+  <button type="submit">Send Enquiry</button>
 
 </form>
 
@@ -111,15 +120,15 @@
     </a>
 
     <a href="https://linkedin.com">
-      <img src="images/linkedin.svg" alt="LinkedIn professional page">
+      <img src="images/linkedin.svg" alt="LinkedIn professional network page">
     </a>
 
     <a href="https://instagram.com">
-      <img src="images/instagram.svg" alt="Instagram photo sharing page">
+      <img src="images/instagram.svg" alt="Instagram photo sharing platform">
     </a>
   </nav>
 
 </footer>
 
 </body>
-</html>
+    </html>
