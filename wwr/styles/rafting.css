@@ -1,14 +1,13 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* BODY */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
+  background: #fff;
 }
 
 /* HEADER */
@@ -16,20 +15,20 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #004466;
+  background: #004466;
   color: white;
   padding: 10px 20px;
 }
 
 header img {
-  width: 80px;
+  width: 70px;
 }
 
 header h1 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
-/* NAVIGATION */
+/* NAV */
 .navigation {
   display: flex;
   list-style: none;
@@ -40,6 +39,13 @@ header h1 {
   color: white;
   text-decoration: none;
   font-weight: bold;
+}
+
+/* MAIN CONTAINER */
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px;
 }
 
 /* HERO */
@@ -58,17 +64,18 @@ header h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0,0,0,0.5);
   color: white;
   padding: 10px 20px;
+  font-size: 1.5rem;
 }
 
-/* GRID LAYOUT */
+/* GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  padding: 20px;
-  gap: 20px;
+  gap: 15px;
+  padding: 20px 0;
 }
 
 .grid img {
@@ -84,11 +91,11 @@ header h1 {
 }
 
 .btn {
-  display: inline-block;
-  background-color: #0077cc;
+  background: #0077cc;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
+  display: inline-block;
   margin-top: 10px;
 }
 
@@ -106,12 +113,12 @@ header h1 {
   margin: auto;
 }
 
-/* EMPLOYEES (CONTACT PAGE) */
+/* EMPLOYEES */
 .employees {
   display: flex;
   justify-content: space-around;
-  padding: 20px;
   flex-wrap: wrap;
+  padding: 20px;
 }
 
 .employees figure {
@@ -119,17 +126,17 @@ header h1 {
 }
 
 .employees img {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
   border-radius: 10px;
 }
 
 /* CONTACT FORM */
 .contact-form {
-  padding: 20px;
   max-width: 500px;
   margin: auto;
+  padding: 20px;
 }
 
 .contact-form form {
@@ -144,10 +151,10 @@ header h1 {
   width: 100%;
 }
 
-/* TABLE (TRIPS PAGE) */
+/* TABLE */
 table {
-  width: 90%;
-  margin: 20px auto;
+  width: 100%;
+  margin: 20px 0;
   border-collapse: collapse;
 }
 
@@ -158,14 +165,14 @@ th, td {
 }
 
 th {
-  background-color: #004466;
+  background: #004466;
   color: white;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
-  background-color: #004466;
+  background: #004466;
   color: white;
   padding: 15px;
   margin-top: 20px;
