@@ -1,9 +1,11 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* BODY */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f7fb;
@@ -24,13 +26,13 @@ header img {
     width: 120px;
 }
 
-/* NAVIGATION */
-nav {
+/* NAV */
+header nav {
     display: flex;
     gap: 15px;
 }
 
-nav a {
+header nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -38,7 +40,7 @@ nav a {
     border-radius: 5px;
 }
 
-nav a:hover {
+header nav a:hover {
     background-color: #16324a;
 }
 
@@ -51,21 +53,16 @@ main {
     border-radius: 10px;
 }
 
-/* TITLE */
-h1 {
+/* TITLES */
+h1, h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-h2 {
-    margin: 20px 0;
-    text-align: center;
-}
-
-/* EMPLOYEES SECTION */
+/* TEAM SECTION */
 .employees {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 20px;
     text-align: center;
     margin-bottom: 30px;
@@ -100,6 +97,7 @@ textarea {
     min-height: 120px;
 }
 
+/* BUTTON */
 button {
     background-color: #1f3a5f;
     color: white;
@@ -122,6 +120,7 @@ footer {
     margin-top: 40px;
 }
 
+/* SOCIAL MEDIA */
 .socialmedia {
     display: flex;
     justify-content: center;
@@ -131,4 +130,4 @@ footer {
 
 .socialmedia img {
     width: 25px;
-}
+    }
