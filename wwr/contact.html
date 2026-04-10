@@ -29,7 +29,7 @@
 
     <h1>Contact White Water Rafting Co.</h1>
 
-    <!-- TEAM SECTION (REQUIRED IMAGES FIX) -->
+    <!-- TEAM SECTION -->
     <section class="employees">
 
         <h2>Meet Our Team</h2>
@@ -62,25 +62,20 @@
 
         <p>Choose your trip type:</p>
 
-        <label>
-            <input type="radio" name="trip" value="basic"> Basic Rafting
-        </label>
+        <input type="radio" id="basic" name="trip" value="basic">
+        <label for="basic">Basic Rafting</label>
 
-        <label>
-            <input type="radio" name="trip" value="adventure"> Adventure Rafting
-        </label>
+        <input type="radio" id="adventure" name="trip" value="adventure">
+        <label for="adventure">Adventure Rafting</label>
 
-        <label>
-            <input type="radio" name="trip" value="extreme"> Extreme Rafting
-        </label>
+        <input type="radio" id="extreme" name="trip" value="extreme">
+        <label for="extreme">Extreme Rafting</label>
 
         <label for="message">Message:</label>
         <textarea id="message" name="message"></textarea>
 
-        <label>
-            <input type="checkbox" name="newsletter">
-            Subscribe to newsletter
-        </label>
+        <input type="checkbox" id="newsletter" name="newsletter">
+        <label for="newsletter">Subscribe to newsletter</label>
 
         <button type="submit">Send Message</button>
 
