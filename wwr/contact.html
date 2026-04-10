@@ -1,122 +1,100 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us | White Water Rafting Co.</title>
-  <meta name="description" content="Contact White Water Rafting Co. for questions, reservations, or trip planning.">
-  <meta name="author" content="Magdalene Shehu">
-  <link rel="stylesheet" href="styles/rafting.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | White Water Rafting Co.</title>
+
+    <meta name="description" content="Contact White Water Rafting Co. for questions, reservations, or trip planning.">
+    <meta name="author" content="Magdalene Shehu">
+
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
 
 <header>
-  <img src="images/z-raftingbw.png" alt="White Water Rafting Company logo">
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="trips.html">Trips</a>
-    <a href="contact.html">Contact Us</a>
-  </nav>
+    <img src="images/z-raftingbw.png" alt="White Water Rafting Company logo">
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="trips.html">Trips</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
 </header>
 
 <main>
 
-  <h1>Contact Us</h1>
+    <h1>Contact White Water Rafting Co.</h1>
 
-  <!-- COMPANY INFO -->
-  <section class="contact-info">
-    <h2>Our Office</h2>
-    <p><strong>Address:</strong> Abuja, Nigeria</p>
-    <p><strong>Phone:</strong> +234 123 456 789</p>
-    <p><strong>Email:</strong> info@rafting.com</p>
-  </section>
+    <form action="#" method="post">
 
-  <!-- MAP -->
-  <section class="map">
-    <iframe
-      src="https://maps.google.com/maps?q=Abuja%20Nigeria&output=embed"
-      loading="lazy"
-      title="Location map of White Water Rafting Co.">
-    </iframe>
-  </section>
+        <!-- Name -->
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname">
 
-  <!-- EMPLOYEES -->
-  <section class="employees">
-    <h2>Meet Our Team</h2>
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
 
-    <div class="employee-grid">
-      <figure>
-        <img src="images/mary.jpeg" alt="Mary, Trip Coordinator">
-        <figcaption>Mary - Trip Coordinator</figcaption>
-      </figure>
+        <!-- Trip Type (Radio buttons - exactly 3) -->
+        <p>Choose your trip type:</p>
 
-      <figure>
-        <img src="images/john.jpeg" alt="John, Lead River Guide">
-        <figcaption>John - Lead River Guide</figcaption>
-      </figure>
+        <label for="basic">
+            <input type="radio" id="basic" name="trip" value="basic">
+            Basic Rafting
+        </label>
 
-      <figure>
-        <img src="images/alex.jpeg" alt="Alex, Safety Officer">
-        <figcaption>Alex - Safety Officer</figcaption>
-      </figure>
-    </div>
-  </section>
+        <label for="adventure">
+            <input type="radio" id="adventure" name="trip" value="adventure">
+            Adventure Rafting
+        </label>
 
-  <!-- FORM -->
-  <section class="contact-form">
-    <h2>Send Us a Message</h2>
+        <label for="extreme">
+            <input type="radio" id="extreme" name="trip" value="extreme">
+            Extreme Rafting
+        </label>
 
-    <form>
+        <!-- Message -->
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
 
-      <label for="fullname">Full Name:</label>
-      <input type="text" id="fullname" name="fullname" required>
+        <!-- Newsletter -->
+        <label for="newsletter">
+            <input type="checkbox" id="newsletter" name="newsletter">
+            Subscribe to newsletter
+        </label>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-
-      <p>Purpose of Message:</p>
-
-      <label for="general">
-        <input type="radio" id="general" name="purpose" value="general" required>
-        General Inquiry
-      </label>
-
-      <label for="reservation">
-        <input type="radio" id="reservation" name="purpose" value="reservation">
-        Reservation Question
-      </label>
-
-      <label for="suggestion">
-        <input type="radio" id="suggestion" name="purpose" value="suggestion">
-        Website Suggestion
-      </label>
-
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-
-      <label for="subscribe">
-        <input type="checkbox" id="subscribe" name="subscribe">
-        Please subscribe me to the monthly newsletter
-      </label>
-
-      <button type="submit">Send Message</button>
+        <!-- Submit Button -->
+        <button type="submit">Send Message</button>
 
     </form>
-  </section>
 
 </main>
 
 <footer>
-  <p>© 2026 White Water Rafting Co. | Magdalene Shehu</p>
 
-  <nav class="socialmedia">
-    <a href="#"><img src="images/facebook.svg" alt="Visit our Facebook page"></a>
-    <a href="#"><img src="images/linkedin.svg" alt="Visit our LinkedIn page"></a>
-    <a href="#"><img src="images/instagram.svg" alt="Visit our Instagram page"></a>
-  </nav>
+    <p>
+        © 2026 White Water Rafting Co. | Magdalene Shehu
+    </p>
+
+    <nav class="socialmedia">
+        <a href="https://facebook.com">
+            <img src="images/facebook.svg" alt="Visit our Facebook page">
+        </a>
+
+        <a href="https://linkedin.com">
+            <img src="images/linkedin.svg" alt="Visit our LinkedIn page">
+        </a>
+
+        <a href="https://instagram.com">
+            <img src="images/instagram.svg" alt="Visit our Instagram page">
+        </a>
+    </nav>
+
 </footer>
 
 </body>
-        </html>
+              </html>
