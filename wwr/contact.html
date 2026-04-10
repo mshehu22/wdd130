@@ -1,144 +1,125 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact Us | White Water Rafting Co.</title>
+  <title>Contact Us | White Water Rafting Co.</title>
 
-    <meta name="description" content="Contact White Water Rafting Co. for reservations, inquiries, and trip planning.">
-    <meta name="author" content="Magdalene Shehu">
+  <meta name="description" content="Contact White Water Rafting Co. for reservations, inquiries, and trip planning.">
+  <meta name="author" content="Magdalene Shehu">
 
-    <link rel="stylesheet" href="styles/rafting.css">
+  <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
 
-<header>
+  <header>
     <img src="images/z-raftingbw.png" alt="White Water Rafting Company logo">
 
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="trips.html">Trips</a>
-        <a href="contact.html">Contact Us</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact Us</a>
     </nav>
-</header>
+  </header>
 
-<main>
+  <main>
 
     <h1>Contact White Water Rafting Co.</h1>
 
-    <!-- COMPANY INFORMATION -->
+    <!-- COMPANY INFO -->
     <section class="company-info">
-        <h2>Contact Information</h2>
-        <p><strong>Address:</strong> River Adventure Base, Abuja, Nigeria</p>
-        <p><strong>Phone:</strong> +234 800 000 0000</p>
-        <p><strong>Email:</strong> info@whitewaterrafting.com</p>
+      <h2>Get in Touch</h2>
+
+      <p><strong>Address:</strong> 123 River Road, Adventure City</p>
+      <p><strong>Phone:</strong> +234 800 000 0000</p>
+      <p><strong>Email:</strong> info@whitewaterrafting.com</p>
+
+      <!-- Google Map -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d..."
+        width="100%"
+        height="300"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
     </section>
 
-    <!-- EMPLOYEE PROFILES (REQUIRED) -->
+    <!-- EMPLOYEES -->
     <section class="employees">
-        <h2>Meet Our Team</h2>
+      <h2>Our Team</h2>
 
-        <figure>
-            <img src="images/john.jpeg" alt="John - Senior River Guide">
-            <figcaption>John - Senior River Guide</figcaption>
-        </figure>
+      <figure>
+        <img src="images/john.jpeg" alt="John - Senior River Guide">
+        <figcaption>John - Senior River Guide</figcaption>
+      </figure>
 
-        <figure>
-            <img src="images/mary.jpeg" alt="Mary - Safety Coordinator">
-            <figcaption>Mary - Safety Coordinator</figcaption>
-        </figure>
+      <figure>
+        <img src="images/mary.jpeg" alt="Mary - Safety Coordinator">
+        <figcaption>Mary - Safety Coordinator</figcaption>
+      </figure>
 
-        <figure>
-            <img src="images/alex.jpeg" alt="Alex - Tour Manager">
-            <figcaption>Alex - Tour Manager</figcaption>
-        </figure>
+      <figure>
+        <img src="images/alex.jpeg" alt="Alex - Tour Manager">
+        <figcaption>Alex - Tour Manager</figcaption>
+      </figure>
     </section>
 
     <!-- CONTACT FORM -->
-    <section class="contact-form-section">
-        <h2>Send Us a Message</h2>
+    <section class="contact-form">
 
-        <form action="#" method="post">
+      <h2>Send Us a Message</h2>
 
-            <!-- NAME -->
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
+      <form>
 
-            <!-- EMAIL -->
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
+        <!-- NAME -->
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
 
-            <!-- PURPOSE -->
-            <p>Purpose of Message:</p>
+        <!-- EMAIL -->
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
 
-            <label>
-                <input type="radio" name="purpose" value="inquiry" required>
-                General Inquiry
-            </label>
+        <!-- RADIO GROUP -->
+        <p>Purpose of Message:</p>
 
-            <label>
-                <input type="radio" name="purpose" value="reservation">
-                Reservation Question
-            </label>
+        <input type="radio" id="general" name="purpose" value="general">
+        <label for="general">General Inquiry</label>
 
-            <label>
-                <input type="radio" name="purpose" value="suggestion">
-                Website Suggestion
-            </label>
+        <input type="radio" id="reservation" name="purpose" value="reservation">
+        <label for="reservation">Reservation Question</label>
 
-            <!-- MESSAGE -->
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" required></textarea>
+        <input type="radio" id="suggestion" name="purpose" value="suggestion">
+        <label for="suggestion">Website Suggestion</label>
 
-            <!-- NEWSLETTER -->
-            <label>
-                <input type="checkbox" name="newsletter">
-                Please subscribe me to the monthly newsletter
-            </label>
+        <!-- MESSAGE -->
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5"></textarea>
 
-            <!-- SUBMIT -->
-            <button type="submit">Send Message</button>
+        <!-- CHECKBOX -->
+        <input type="checkbox" id="newsletter" name="newsletter">
+        <label for="newsletter">Please subscribe me to the monthly newsletter</label>
 
-        </form>
+        <!-- SUBMIT -->
+        <button type="submit">Send Message</button>
+
+      </form>
+
     </section>
 
-    <!-- GOOGLE MAP -->
-    <section class="map">
-        <h2>Our Location</h2>
+  </main>
 
-        <iframe 
-            src="https://www.google.com/maps?q=Abuja&output=embed"
-            loading="lazy"
-            allowfullscreen>
-        </iframe>
-    </section>
-
-</main>
-
-<footer>
-
-    <p>
-        © 2026 White Water Rafting Co. | Magdalene Shehu
-    </p>
+  <footer>
+    <p>© 2026 White Water Rafting Co. | Magdalene Shehu</p>
 
     <nav class="socialmedia">
-        <a href="https://facebook.com">
-            <img src="images/facebook.svg" alt="Visit our Facebook page">
-        </a>
-
-        <a href="https://linkedin.com">
-            <img src="images/linkedin.svg" alt="Visit our LinkedIn page">
-        </a>
-
-        <a href="https://instagram.com">
-            <img src="images/instagram.svg" alt="Visit our Instagram page">
-        </a>
+      <a href="#"><img src="images/facebook.svg" alt="Visit our Facebook page"></a>
+      <a href="#"><img src="images/linkedin.svg" alt="Visit our LinkedIn page"></a>
+      <a href="#"><img src="images/instagram.svg" alt="Visit our Instagram page"></a>
     </nav>
-
-</footer>
+  </footer>
 
 </body>
-            </html>
+    </html>
