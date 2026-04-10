@@ -29,36 +29,32 @@
 
   <h1>Contact White Water Rafting Co.</h1>
 
-  <!-- CONTACT INFO -->
-  <section class="contact-info">
-    <h2>Contact Information</h2>
-    <p><strong>Address:</strong> Abuja, Nigeria</p>
-    <p><strong>Phone:</strong> +234 800 000 0000</p>
-    <p><strong>Email:</strong> info@whiteraftingco.com</p>
-
-    <!-- FIXED MAP (NO ERROR VERSION) -->
-    <iframe
-      class="map"
-      src="https://www.google.com/maps?q=Abuja,Nigeria&output=embed"
-      width="100%"
-      height="250"
-      loading="lazy">
-    </iframe>
-  </section>
-
-  <!-- ENQUIRY FORM -->
-  <section class="form-section">
-    <h2>Send an Enquiry</h2>
-
+  <!-- CONTACT FORM -->
+  <section class="contact-form">
     <form>
+
       <label for="fullname">Full Name</label>
       <input type="text" id="fullname" name="fullname">
 
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email">
+
       <p>Purpose of Message</p>
 
-      <label><input type="radio" id="general" name="purpose" value="general"> General Inquiry</label>
-      <label><input type="radio" id="reservation" name="purpose" value="reservation"> Reservation Question</label>
-      <label><input type="radio" id="suggestion" name="purpose" value="suggestion"> Website Suggestion</label>
+      <label>
+        <input type="radio" id="general" name="purpose" value="general">
+        General Inquiry
+      </label>
+
+      <label>
+        <input type="radio" id="reservation" name="purpose" value="reservation">
+        Reservation Question
+      </label>
+
+      <label>
+        <input type="radio" id="suggestion" name="purpose" value="suggestion">
+        Website Suggestion
+      </label>
 
       <label for="message">Message</label>
       <textarea id="message" name="message"></textarea>
@@ -68,15 +64,18 @@
         Please subscribe me to the monthly newsletter
       </label>
 
-      <button type="submit">Send Enquiry</button>
+      <button type="submit">Send Inquiry</button>
+
     </form>
   </section>
 
-  <!-- TEAM SECTION (FIXED FOR AUDIT COMMENTS) -->
-  <section class="team">
+  <!-- EMPLOYEES (BELOW FORM) -->
+  <section class="employees">
+
     <h2>Our Team</h2>
 
-    <div class="team-grid">
+    <div class="employee-container">
+
       <figure>
         <img src="images/john.jpeg" alt="John - Senior River Guide at White Water Rafting Co.">
         <figcaption>John - Senior River Guide</figcaption>
@@ -91,20 +90,43 @@
         <img src="images/alex.jpeg" alt="Alex - Tour Manager at White Water Rafting Co.">
         <figcaption>Alex - Tour Manager</figcaption>
       </figure>
+
     </div>
+  </section>
+
+  <!-- GOOGLE MAP (FIXED EMBED - NO ERROR) -->
+  <section class="map">
+    <h2>Find Us</h2>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.865!2d7.491302!3d9.05785"
+      width="100%"
+      height="300"
+      loading="lazy">
+    </iframe>
   </section>
 
 </main>
 
 <footer>
+
   <p>© 2026 White Water Rafting Co. | Magdalene Shehu | All rights reserved</p>
 
   <nav class="socialmedia">
-    <a href="#"><img src="images/facebook.svg" alt="Facebook social media page"></a>
-    <a href="#"><img src="images/linkedin.svg" alt="LinkedIn professional network page"></a>
-    <a href="#"><img src="images/instagram.svg" alt="Instagram photo sharing platform"></a>
+    <a href="https://facebook.com">
+      <img src="images/facebook.svg" alt="Facebook social media page">
+    </a>
+
+    <a href="https://linkedin.com">
+      <img src="images/linkedin.svg" alt="LinkedIn professional network page">
+    </a>
+
+    <a href="https://instagram.com">
+      <img src="images/instagram.svg" alt="Instagram photo sharing platform">
+    </a>
   </nav>
+
 </footer>
 
 </body>
-        </html>
+  </html>
