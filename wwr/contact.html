@@ -1,193 +1,117 @@
-/* =========================
-   RESET
-========================= */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-/* =========================
-   BODY
-========================= */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f4f7fb;
-  color: #1f3a5f;
-  line-height: 1.6;
-}
+  <title>Contact Us | White Water Rafting Co.</title>
 
-/* =========================
-   HEADER
-========================= */
-header {
-  background-color: #1f3a5f;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-}
+  <meta name="description" content="Contact White Water Rafting Co. for reservations, enquiries, trip planning, and customer support in Abuja, Nigeria.">
+  <meta name="author" content="Magdalene Shehu">
 
-header img {
-  width: 80px;
-  height: auto;
-}
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
 
-/* =========================
-   NAVIGATION
-========================= */
-nav {
-  display: flex;
-  gap: 15px;
-}
+<body>
 
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
+<header>
+  <img src="images/z-raftingbw.png" alt="White Water Rafting Company logo">
 
-nav a:hover {
-  text-decoration: underline;
-}
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="trips.html">Trips</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+</header>
 
-/* =========================
-   MAIN LAYOUT
-========================= */
-main {
-  padding: 20px;
-}
+<main>
 
-/* =========================
-   HEADINGS
-========================= */
-h1, h2 {
-  margin-bottom: 10px;
-}
+  <h1>Contact White Water Rafting Co.</h1>
 
-/* =========================
-   CONTACT INFO SECTION
-========================= */
-.contact-info {
-  background-color: white;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-}
+  <!-- FORM -->
+  <form>
 
-/* =========================
-   MAP
-========================= */
-.map {
-  width: 100%;
-  height: 250px;
-  border: 0;
-  margin-top: 10px;
-  border-radius: 8px;
-}
+    <label for="fullname">Full Name</label>
+    <input type="text" id="fullname" name="fullname">
 
-/* =========================
-   FORM SECTION
-========================= */
-.form-section {
-  background-color: white;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-}
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email">
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+    <p>Purpose of Message</p>
 
-input[type="text"],
-textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  width: 100%;
-  border-radius: 5px;
-}
+    <label>
+      <input type="radio" id="general" name="purpose" value="general">
+      General Inquiry
+    </label>
 
-textarea {
-  min-height: 100px;
-}
+    <label>
+      <input type="radio" id="reservation" name="purpose" value="reservation">
+      Reservation Question
+    </label>
 
-/* =========================
-   RADIO + CHECKBOX
-========================= */
-label {
-  margin-top: 5px;
-}
+    <label>
+      <input type="radio" id="suggestion" name="purpose" value="suggestion">
+      Website Suggestion
+    </label>
 
-/* =========================
-   BUTTON
-========================= */
-button {
-  background-color: #16324a;
-  color: white;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  border-radius: 5px;
-}
+    <label for="message">Message</label>
+    <textarea id="message" name="message"></textarea>
 
-button:hover {
-  background-color: #1f3a5f;
-}
+    <label>
+      <input type="checkbox" id="subscribe" name="subscribe">
+      Please subscribe me to the monthly newsletter
+    </label>
 
-/* =========================
-   TEAM SECTION
-   (FIXED: horizontal layout)
-========================= */
-.team {
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-}
+    <button type="submit">Send Inquiry</button>
 
-.team-grid {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  flex-wrap: wrap;
-  margin-top: 15px;
-}
+  </form>
 
-.team-grid figure {
-  text-align: center;
-}
+  <!-- EMPLOYEES -->
+  <section>
+    <h2>Our Team</h2>
 
-/* FIX IMAGE SIZE ISSUE */
-.team-grid img {
-  width: 140px;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 10px;
-}
+    <figure>
+      <img src="images/john.jpeg" alt="John - Senior River Guide at White Water Rafting Co.">
+      <figcaption>John - Senior River Guide</figcaption>
+    </figure>
 
-/* =========================
-   FOOTER
-========================= */
-footer {
-  background-color: #1f3a5f;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 20px;
-}
+    <figure>
+      <img src="images/mary.jpeg" alt="Mary - Safety Coordinator at White Water Rafting Co.">
+      <figcaption>Mary - Safety Coordinator</figcaption>
+    </figure>
 
-.socialmedia {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
+    <figure>
+      <img src="images/alex.jpeg" alt="Alex - Tour Manager at White Water Rafting Co.">
+      <figcaption>Alex - Tour Manager</figcaption>
+    </figure>
+  </section>
 
-.socialmedia img {
-  width: 25px;
-  height: auto;
-}
+  <!-- MAP (FIXED - SIMPLE SAFE VERSION) -->
+  <section>
+    <h2>Find Us</h2>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.865!2d7.491302!3d9.05785"
+      width="100%"
+      height="300">
+    </iframe>
+
+  </section>
+
+</main>
+
+<footer>
+
+  <p>© 2026 White Water Rafting Co. | Magdalene Shehu</p>
+
+  <nav class="socialmedia">
+    <a href="#"><img src="images/facebook.svg" alt="Facebook social media page"></a>
+    <a href="#"><img src="images/linkedin.svg" alt="LinkedIn professional network page"></a>
+    <a href="#"><img src="images/instagram.svg" alt="Instagram photo sharing platform"></a>
+  </nav>
+
+</footer>
+
+</body>
+   </html>
