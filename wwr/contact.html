@@ -1,107 +1,101 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact Us | White Water Rafting Co.</title>
+  <title>Contact Us | White Water Rafting Co.</title>
+  <meta name="description" content="Contact White Water Rafting Co. for questions, reservations, or trip planning.">
+  <meta name="author" content="Magdalene Shehu">
 
-    <meta name="description" content="Contact White Water Rafting Co. for questions, reservations, or trip planning.">
-    <meta name="author" content="Magdalene Shehu">
-
-    <link rel="stylesheet" href="styles/rafting.css">
+  <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
 
 <header>
-    <img src="images/z-raftingbw.png" alt="White Water Rafting Company logo">
+  <img src="images/z-raftingbw.png" alt="White Water Rafting Company logo">
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="trips.html">Trips</a>
-        <a href="contact.html">Contact Us</a>
-    </nav>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="trips.html">Trips</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
 </header>
 
 <main>
 
-    <h1>Contact White Water Rafting Co.</h1>
+  <h1>Contact White Water Rafting Co.</h1>
 
-    <!-- TEAM SECTION -->
-    <section class="employees">
+  <section class="team">
+    <h2>Our Team</h2>
 
-        <h2>Meet Our Team</h2>
+    <div class="team-grid">
+      <figure>
+        <img src="images/john.jpeg" alt="John, Lead River Guide">
+        <figcaption>John – Lead River Guide</figcaption>
+      </figure>
 
-        <figure>
-            <img src="images/john.jpeg" alt="John, Lead River Guide">
-            <figcaption>John - Lead River Guide</figcaption>
-        </figure>
+      <figure>
+        <img src="images/mary.jpeg" alt="Mary, Trip Coordinator">
+        <figcaption>Mary – Trip Coordinator</figcaption>
+      </figure>
 
-        <figure>
-            <img src="images/mary.jpeg" alt="Mary, Trip Coordinator">
-            <figcaption>Mary - Trip Coordinator</figcaption>
-        </figure>
+      <figure>
+        <img src="images/alex.jpeg" alt="Alex, Safety Officer">
+        <figcaption>Alex – Safety Officer</figcaption>
+      </figure>
+    </div>
+  </section>
 
-        <figure>
-            <img src="images/alex.jpeg" alt="Alex, Safety Officer">
-            <figcaption>Alex - Safety Officer</figcaption>
-        </figure>
+  <section class="contact-form">
+    <form>
 
-    </section>
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname">
 
-    <!-- CONTACT FORM -->
-    <form action="#" method="post">
+      <p>Trip Type:</p>
 
-        <label for="fullname">Full Name:</label>
-        <input type="text" id="fullname" name="fullname">
+      <label for="family">
+        <input type="radio" id="family" name="trip" value="family">
+        Family Trip
+      </label>
 
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email">
+      <label for="school">
+        <input type="radio" id="school" name="trip" value="school">
+        School Trip
+      </label>
 
-        <p>Choose your trip type:</p>
-
-        <input type="radio" id="basic" name="trip" value="basic">
-        <label for="basic">Basic Rafting</label>
-
+      <label for="adventure">
         <input type="radio" id="adventure" name="trip" value="adventure">
-        <label for="adventure">Adventure Rafting</label>
+        Adventure Trip
+      </label>
 
-        <input type="radio" id="extreme" name="trip" value="extreme">
-        <label for="extreme">Extreme Rafting</label>
+      <label for="message">Message</label>
+      <textarea id="message" name="message"></textarea>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message"></textarea>
-
+      <label for="newsletter">
         <input type="checkbox" id="newsletter" name="newsletter">
-        <label for="newsletter">Subscribe to newsletter</label>
+        Subscribe to newsletter
+      </label>
 
-        <button type="submit">Send Message</button>
+      <button type="submit">Send My Message</button>
 
     </form>
+  </section>
 
 </main>
 
 <footer>
+  <p>© 2026 White Water Rafting Co. | Magdalene Shehu</p>
 
-    <p>© 2026 White Water Rafting Co. | Magdalene Shehu</p>
-
-    <nav class="socialmedia">
-        <a href="https://facebook.com">
-            <img src="images/facebook.svg" alt="Visit our Facebook page">
-        </a>
-
-        <a href="https://linkedin.com">
-            <img src="images/linkedin.svg" alt="Visit our LinkedIn page">
-        </a>
-
-        <a href="https://instagram.com">
-            <img src="images/instagram.svg" alt="Visit our Instagram page">
-        </a>
-    </nav>
-
+  <nav class="socialmedia">
+    <a href="#"><img src="images/facebook.svg" alt="Visit our Facebook page"></a>
+    <a href="#"><img src="images/linkedin.svg" alt="Visit our LinkedIn page"></a>
+    <a href="#"><img src="images/instagram.svg" alt="Visit our Instagram page"></a>
+  </nav>
 </footer>
 
 </body>
-            </html>
+                    </html>
