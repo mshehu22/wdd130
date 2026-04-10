@@ -16,33 +16,22 @@ body {
 /* HEADER */
 header {
   background-color: #1f3a5f;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
+  padding: 15px 30px;
 }
 
-/* FIX HEADER TEXT CONTRAST */
-header,
-header nav a {
-  color: white;
-}
-
-/* LOGO */
 header img {
   height: 60px;
 }
 
-/* NAV LINKS */
-nav a {
+header nav a {
   color: white;
+  margin-left: 20px;
   text-decoration: none;
-  margin: 0 10px;
   font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
 }
 
 /* MAIN */
@@ -50,79 +39,69 @@ main {
   padding: 20px;
 }
 
-/* FORM SECTION */
-.contact-form {
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* FORM */
+form {
+  max-width: 500px;
+  margin: 0 auto 40px;
   background: white;
   padding: 20px;
-  margin: 20px 0;
   border-radius: 8px;
 }
 
-form label,
-form p {
+form label {
   display: block;
   margin-top: 10px;
 }
 
-/* INPUTS */
-input[type="text"],
-textarea {
+form input,
+form textarea {
   width: 100%;
-  padding: 10px;
+  padding: 8px;
   margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
 }
 
-/* BUTTON */
-button {
+form button {
   margin-top: 15px;
-  padding: 10px 15px;
+  padding: 10px;
   background-color: #1f3a5f;
   color: white;
   border: none;
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #16324a;
-}
-
-/* TEAM SECTION */
-.team {
-  margin-top: 30px;
-  text-align: center;
-}
-
-.team-grid {
+/* EMPLOYEES (FIXED SIZE + HORIZONTAL) */
+.employees {
   display: flex;
   justify-content: center;
   gap: 20px;
-  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
-/* FIX IMAGE SIZE ISSUE (IMPORTANT) */
-.team-grid figure {
-  background: white;
-  padding: 10px;
-  border-radius: 8px;
-  width: 200px;
-}
-
-.team-grid img {
-  width: 100%;
-  height: 160px;
+.employees img {
+  width: 150px;
+  height: 150px;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: 10px;
 }
 
-/* MAP FIX (ENSURES VISIBILITY) */
+.employees figure {
+  text-align: center;
+}
+
+/* MAP */
+.map {
+  margin-top: 20px;
+}
+
 .map iframe {
   width: 100%;
-  height: 350px;
+  height: 300px;
   border: 0;
-  margin-top: 10px;
-  display: block;
 }
 
 /* FOOTER */
@@ -130,17 +109,14 @@ footer {
   background-color: #1f3a5f;
   color: white;
   text-align: center;
-  padding: 20px;
-  margin-top: 30px;
+  padding: 15px;
 }
 
-/* SOCIAL ICONS */
+.socialmedia {
+  margin-top: 10px;
+}
+
 .socialmedia img {
   width: 30px;
-  margin: 5px;
-}
-
-/* FIX CONTRAST WARNING (SAFETY OVERRIDE) */
-header {
-  background-color: #1f3a5f;
+  margin: 0 5px;
 }
