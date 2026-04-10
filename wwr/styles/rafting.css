@@ -1,122 +1,220 @@
-/* RESET */
+/* =========================
+   GLOBAL RESET
+========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* BODY */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f7fb;
-  color: #16324a;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
+  color: #222;
+  background-color: #ffffff;
 }
 
-/* HEADER */
+/* =========================
+   HEADER & NAVIGATION
+========================= */
 header {
-  background-color: #1f3a5f;
-  color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
+  background-color: #004466;
+  padding: 10px 20px;
 }
 
 header img {
-  height: 60px;
+  width: 80px;
+  height: auto;
 }
 
-header nav a {
-  color: #ffffff;
-  margin-left: 20px;
+.navigation {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navigation li a {
   text-decoration: none;
+  color: white;
   font-weight: bold;
 }
 
-/* MAIN */
-main {
-  padding: 20px;
+.navigation li a:hover {
+  text-decoration: underline;
 }
 
-h1 {
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+  position: relative;
+  width: 100%;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 15px 25px;
+  font-size: 2.5rem;
   text-align: center;
-  margin-bottom: 20px;
-}
-
-/* EMPLOYEES */
-.employees {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-bottom: 40px;
-}
-
-.employees figure {
-  text-align: center;
-}
-
-.employees img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-/* FORM */
-form {
-  max-width: 500px;
-  margin: 0 auto 40px;
-  background: #ffffff;
-  padding: 20px;
   border-radius: 8px;
 }
 
-form label {
-  display: block;
-  margin-top: 10px;
+/* =========================
+   CALL TO ACTION (CTA)
+========================= */
+.cta {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #e6f7ff;
 }
 
-form input,
-form textarea {
+.cta h2 {
+  margin-bottom: 10px;
+}
+
+.cta p {
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #0077cc;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #005999;
+}
+
+/* =========================
+   GRID LAYOUT
+========================= */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.grid div {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.grid img {
   width: 100%;
-  padding: 8px;
-  margin-top: 5px;
+  height: auto;
+  border-radius: 10px;
 }
 
-form button {
-  margin-top: 15px;
+.grid h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* =========================
+   NEWSLETTER
+========================= */
+.newsletter {
+  background-color: #f0f0f0;
+  padding: 30px;
+  text-align: center;
+}
+
+.newsletter form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.newsletter input {
   padding: 10px;
-  background-color: #1f3a5f;
-  color: #ffffff;
-  border: none;
-  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-/* MAP */
-.map {
+.newsletter button {
+  padding: 10px;
+  border: none;
+  background-color: #004466;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.newsletter button:hover {
+  background-color: #00334d;
+}
+
+/* =========================
+   TABLE (TRIPS PAGE)
+========================= */
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+}
+
+table th {
+  background-color: #004466;
+  color: white;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #004466;
+  color: white;
   margin-top: 20px;
 }
 
-.map iframe {
-  width: 100%;
-  height: 300px;
-  border: 0;
-}
-
-/* FOOTER */
-footer {
-  background-color: #1f3a5f;
-  color: #ffffff;
-  text-align: center;
-  padding: 15px;
-}
-
-.socialmedia {
-  margin-top: 10px;
-}
-
-.socialmedia img {
-  width: 30px;
-  margin: 0 5px;
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
   }
+
+  .navigation {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+    width: 80%;
+  }
+}
