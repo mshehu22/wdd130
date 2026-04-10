@@ -1,5 +1,5 @@
 /* =========================
-   GLOBAL STYLES
+   RESET
 ========================= */
 
 * {
@@ -7,6 +7,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* =========================
+   BODY
+========================= */
 
 body {
   font-family: Arial, sans-serif;
@@ -16,17 +20,16 @@ body {
 }
 
 /* =========================
-   HEADER
-   (FIXED CONTRAST ISSUE)
+   HEADER (FIXED CONTRAST)
 ========================= */
 
 header {
   background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 30px;
   border-bottom: 2px solid #1f3a5f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
 }
 
 header img {
@@ -34,15 +37,15 @@ header img {
   height: auto;
 }
 
-/* NAVIGATION */
+/* NAV */
 nav {
   display: flex;
   gap: 20px;
 }
 
 nav a {
-  text-decoration: none;
   color: #1f3a5f;
+  text-decoration: none;
   font-weight: bold;
 }
 
@@ -51,7 +54,7 @@ nav a:hover {
 }
 
 /* =========================
-   MAIN CONTENT
+   MAIN
 ========================= */
 
 main {
@@ -62,14 +65,14 @@ main {
   border-radius: 10px;
 }
 
-/* Heading */
+/* TITLE */
 h1 {
-  margin-bottom: 20px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 /* =========================
-   FORM STYLES
+   FORM
 ========================= */
 
 form {
@@ -100,14 +103,14 @@ input[type="checkbox"] {
   margin-right: 8px;
 }
 
+/* BUTTON */
 button {
-  padding: 12px;
   background-color: #1f3a5f;
   color: white;
+  padding: 12px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
 }
 
 button:hover {
@@ -127,13 +130,13 @@ footer {
 }
 
 footer nav.socialmedia {
-  margin-top: 10px;
   display: flex;
   justify-content: center;
   gap: 15px;
+  margin-top: 10px;
 }
 
 footer nav.socialmedia img {
   width: 25px;
   height: 25px;
-}
+     }
