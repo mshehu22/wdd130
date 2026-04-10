@@ -6,7 +6,7 @@
 
     <title>Contact Us | White Water Rafting Co.</title>
 
-    <meta name="description" content="Contact White Water Rafting Co. for questions, reservations, or trip planning.">
+    <meta name="description" content="Contact White Water Rafting Co. for reservations, inquiries, and trip planning.">
     <meta name="author" content="Magdalene Shehu">
 
     <link rel="stylesheet" href="styles/rafting.css">
@@ -29,48 +29,92 @@
 
     <h1>Contact White Water Rafting Co.</h1>
 
-    <form action="#" method="post">
+    <!-- COMPANY INFORMATION -->
+    <section class="company-info">
+        <h2>Contact Information</h2>
+        <p><strong>Address:</strong> River Adventure Base, Abuja, Nigeria</p>
+        <p><strong>Phone:</strong> +234 800 000 0000</p>
+        <p><strong>Email:</strong> info@whitewaterrafting.com</p>
+    </section>
 
-        <!-- Name -->
-        <label for="fullname">Full Name:</label>
-        <input type="text" id="fullname" name="fullname">
+    <!-- EMPLOYEE PROFILES (REQUIRED) -->
+    <section class="employees">
+        <h2>Meet Our Team</h2>
 
-        <!-- Email -->
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email">
+        <figure>
+            <img src="images/john.jpeg" alt="John - Senior River Guide">
+            <figcaption>John - Senior River Guide</figcaption>
+        </figure>
 
-        <!-- Trip Type (Radio buttons - exactly 3) -->
-        <p>Choose your trip type:</p>
+        <figure>
+            <img src="images/mary.jpeg" alt="Mary - Safety Coordinator">
+            <figcaption>Mary - Safety Coordinator</figcaption>
+        </figure>
 
-        <label for="basic">
-            <input type="radio" id="basic" name="trip" value="basic">
-            Basic Rafting
-        </label>
+        <figure>
+            <img src="images/alex.jpeg" alt="Alex - Tour Manager">
+            <figcaption>Alex - Tour Manager</figcaption>
+        </figure>
+    </section>
 
-        <label for="adventure">
-            <input type="radio" id="adventure" name="trip" value="adventure">
-            Adventure Rafting
-        </label>
+    <!-- CONTACT FORM -->
+    <section class="contact-form-section">
+        <h2>Send Us a Message</h2>
 
-        <label for="extreme">
-            <input type="radio" id="extreme" name="trip" value="extreme">
-            Extreme Rafting
-        </label>
+        <form action="#" method="post">
 
-        <!-- Message -->
-        <label for="message">Message:</label>
-        <textarea id="message" name="message"></textarea>
+            <!-- NAME -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
 
-        <!-- Newsletter -->
-        <label for="newsletter">
-            <input type="checkbox" id="newsletter" name="newsletter">
-            Subscribe to newsletter
-        </label>
+            <!-- EMAIL -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
 
-        <!-- Submit Button -->
-        <button type="submit">Send Message</button>
+            <!-- PURPOSE -->
+            <p>Purpose of Message:</p>
 
-    </form>
+            <label>
+                <input type="radio" name="purpose" value="inquiry" required>
+                General Inquiry
+            </label>
+
+            <label>
+                <input type="radio" name="purpose" value="reservation">
+                Reservation Question
+            </label>
+
+            <label>
+                <input type="radio" name="purpose" value="suggestion">
+                Website Suggestion
+            </label>
+
+            <!-- MESSAGE -->
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <!-- NEWSLETTER -->
+            <label>
+                <input type="checkbox" name="newsletter">
+                Please subscribe me to the monthly newsletter
+            </label>
+
+            <!-- SUBMIT -->
+            <button type="submit">Send Message</button>
+
+        </form>
+    </section>
+
+    <!-- GOOGLE MAP -->
+    <section class="map">
+        <h2>Our Location</h2>
+
+        <iframe 
+            src="https://www.google.com/maps?q=Abuja&output=embed"
+            loading="lazy"
+            allowfullscreen>
+        </iframe>
+    </section>
 
 </main>
 
@@ -97,4 +141,4 @@
 </footer>
 
 </body>
-</html>
+            </html>
