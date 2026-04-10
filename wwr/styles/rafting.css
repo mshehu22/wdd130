@@ -1,121 +1,193 @@
-/* RESET */
+/* =========================
+   RESET
+========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* BODY */
+/* =========================
+   BODY
+========================= */
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #f4f7fb;
   color: #1f3a5f;
   line-height: 1.6;
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 header {
+  background-color: #1f3a5f;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1f3a5f;
-  padding: 15px;
+  padding: 15px 30px;
 }
 
 header img {
-  height: 60px;
-  width: auto;
+  width: 80px;
+  height: auto;
 }
 
-/* NAV */
+/* =========================
+   NAVIGATION
+========================= */
+nav {
+  display: flex;
+  gap: 15px;
+}
+
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0 10px;
+  font-weight: bold;
 }
 
-/* MAIN */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   MAIN LAYOUT
+========================= */
 main {
   padding: 20px;
 }
 
-/* FORM */
-form {
-  background: white;
+/* =========================
+   HEADINGS
+========================= */
+h1, h2 {
+  margin-bottom: 10px;
+}
+
+/* =========================
+   CONTACT INFO SECTION
+========================= */
+.contact-info {
+  background-color: white;
   padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 30px;
-}
-
-form input[type="text"],
-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-form textarea {
-  height: 120px;
-}
-
-form button {
-  background: #1f3a5f;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  cursor: pointer;
-}
-
-/* EMPLOYEES SECTION */
-.employees {
-  margin-top: 30px;
-}
-
-.employee-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.employee-container figure {
-  text-align: center;
-  width: 200px;
-}
-
-.employee-container img {
-  width: 100%;
-  height: auto;
+  margin-bottom: 20px;
   border-radius: 10px;
 }
 
-/* MAP */
+/* =========================
+   MAP
+========================= */
 .map {
-  margin-top: 30px;
-}
-
-.map iframe {
+  width: 100%;
+  height: 250px;
   border: 0;
+  margin-top: 10px;
   border-radius: 8px;
 }
 
-/* FOOTER */
+/* =========================
+   FORM SECTION
+========================= */
+.form-section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="text"],
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  border-radius: 5px;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+/* =========================
+   RADIO + CHECKBOX
+========================= */
+label {
+  margin-top: 5px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+button {
+  background-color: #16324a;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #1f3a5f;
+}
+
+/* =========================
+   TEAM SECTION
+   (FIXED: horizontal layout)
+========================= */
+.team {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.team-grid figure {
+  text-align: center;
+}
+
+/* FIX IMAGE SIZE ISSUE */
+.team-grid img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* =========================
+   FOOTER
+========================= */
 footer {
-  margin-top: 40px;
-  background: #16324a;
+  background-color: #1f3a5f;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 15px;
+  margin-top: 20px;
 }
 
 .socialmedia {
   margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
-.socialmedia a img {
-  width: 30px;
-  margin: 0 5px;
+.socialmedia img {
+  width: 25px;
+  height: auto;
 }
