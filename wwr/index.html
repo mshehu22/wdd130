@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>White Water Rafting | Home</title>
-<link rel="stylesheet" href="styles/rafting.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>White Water Rafting | Home</title>
+  <meta name="description" content="Experience thrilling white water rafting adventures with our expert guides.">
+  <meta name="author" content="Magdalene Shehu">
+  <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
 
+<!-- HEADER -->
 <header>
   <div class="header-container">
+    
     <div class="logo">
-      <img src="images/logo.jpg" alt="Logo">
+      <img src="images/logo.jpg" alt="White Water Rafting Logo">
       <h1>White Water Rafting Company</h1>
     </div>
 
@@ -22,41 +26,65 @@
       <a href="trips.html">Trips</a>
       <a href="contact.html">Contact</a>
     </nav>
+
   </div>
 </header>
 
-<section class="hero">
-  <img src="images/hero.jpg" alt="Rafting">
-  <div class="hero-text">
-    <h2>Adventure Starts Here</h2>
-    <p>Plan your rafting trip today</p>
-    <a href="trips.html">View Trips</a>
-  </div>
-</section>
+<!-- MAIN -->
+<main>
 
-<section class="grid">
-  <div class="card">
-    <img src="images/rafting1.jpg">
-    <h3>Exciting Rapids</h3>
-    <p>Thrilling adventure awaits.</p>
-  </div>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <img src="images/hero.jpg" alt="Rafting Adventure">
 
-  <div class="card">
-    <img src="images/rafting2.jpg">
-    <h3>Beautiful Nature</h3>
-    <p>Enjoy scenic river views.</p>
-  </div>
-</section>
+    <div class="hero-text">
+      <h2>Adventure Starts Here</h2>
+      <p>Plan your rafting experience today</p>
 
-<form>
-  <h2>Newsletter</h2>
-  <input type="text" placeholder="Name" required>
-  <input type="email" placeholder="Email" required>
-  <button>Subscribe</button>
-</form>
+      <a href="trips.html" 
+         style="display:inline-block;margin-top:10px;padding:10px 15px;background:#007ea7;color:white;text-decoration:none;border-radius:5px;">
+         View Trips
+      </a>
+    </div>
+  </section>
 
+  <!-- GRID CONTENT -->
+  <section class="grid">
+
+    <div class="card">
+      <img src="images/rafting1.jpg" alt="Exciting Rapids">
+      <h3>Exciting Rapids</h3>
+      <p>Experience fast, thrilling white water rapids guided by professionals.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/rafting2.jpg" alt="Nature Views">
+      <h3>Beautiful Nature</h3>
+      <p>Enjoy breathtaking scenery and peaceful surroundings on every trip.</p>
+    </div>
+
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section>
+    <form>
+      <h2>Subscribe to Our Newsletter</h2>
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
 <footer>
-<p>© 2026 White Water Rafting Company</p>
+  <p>© 2026 White Water Rafting Company | Magdalene Shehu</p>
 </footer>
 
 </body>
