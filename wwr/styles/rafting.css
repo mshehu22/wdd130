@@ -9,6 +9,13 @@ body {
   line-height: 1.5;
 }
 
+/* GLOBAL IMAGE FIX */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* HEADER */
 header {
   background: #004e6b;
@@ -60,7 +67,7 @@ nav a {
   text-align: center;
 }
 
-/* CTA BUTTON */
+/* CTA */
 .cta {
   display: inline-block;
   margin-top: 10px;
@@ -79,18 +86,17 @@ nav a {
   padding: 20px;
 }
 
-/* GLOBAL IMAGE FIX */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
 /* CARDS */
 .card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
+}
+
+/* PAGE TITLES */
+.page-title {
+  text-align: center;
+  margin: 20px 0;
 }
 
 /* TABLE */
@@ -110,22 +116,10 @@ th {
   color: white;
 }
 
-/* SECTIONS */
-.page-title {
-  text-align: center;
-  margin: 20px 0;
-}
-
-/* CTA SECTION */
-.cta-section {
-  text-align: center;
-  margin: 20px;
-}
-
 /* NEWSLETTER */
 .newsletter {
-  padding: 20px;
   text-align: center;
+  padding: 20px;
 }
 
 .newsletter form {
