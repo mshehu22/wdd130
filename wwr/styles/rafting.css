@@ -1,3 +1,8 @@
+/* =========================
+   WDD 130 RAFTING SITE CSS
+   ========================= */
+
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -6,37 +11,35 @@
 
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
+  line-height: 1.5;
+  color: #222;
 }
 
+/* HEADER */
 header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  background: #004466;
-  color: white;
+  align-items: center;
+  background: #004e64;
   padding: 10px 20px;
+  flex-wrap: wrap;
 }
 
 header img {
-  width: 70px;
+  width: 80px;
+  height: auto;
 }
 
-.navigation {
+nav {
   display: flex;
-  list-style: none;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
-.navigation a {
+nav a {
   color: white;
   text-decoration: none;
-}
-
-main {
-  max-width: 1000px;
-  margin: auto;
-  padding: 10px;
+  font-weight: bold;
 }
 
 /* HERO */
@@ -50,93 +53,93 @@ main {
   object-fit: cover;
 }
 
-.hero h2 {
+.hero-text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.6);
   color: white;
-  padding: 10px 20px;
+  padding: 20px;
+  text-align: center;
 }
 
-/* GRID */
+/* GRID LAYOUT */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
-  padding: 20px 0;
-}
-
-.grid img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-/* BUTTON */
-.btn {
-  display: inline-block;
-  background: #0077cc;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-
-/* EMPLOYEES */
-.employees {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  gap: 20px;
   padding: 20px;
 }
 
-.employees img {
-  width: 180px;
+.card {
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.card img {
+  width: 100%;
   height: 180px;
   object-fit: cover;
 }
 
 /* FORM */
-.contact-form {
-  max-width: 500px;
-  margin: auto;
-  padding: 20px;
-}
-
-.contact-form form {
+form {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 20px;
 }
 
-.contact-form input,
-.contact-form textarea {
-  padding: 8px;
+input, textarea {
+  padding: 10px;
+  width: 100%;
+}
+
+button {
+  background: #0077b6;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
 }
 
 /* TABLE */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin: 20px 0;
+  margin: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
 }
 
 th, td {
-  border: 1px solid #ccc;
   padding: 10px;
-  text-align: center;
-}
-
-th {
-  background: #004466;
-  color: white;
+  text-align: left;
 }
 
 /* FOOTER */
 footer {
-  text-align: center;
-  background: #004466;
+  background: #004e64;
   color: white;
+  text-align: center;
   padding: 15px;
+  margin-top: 20px;
+}
+
+/* TEAM SECTION */
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.team img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
   }
