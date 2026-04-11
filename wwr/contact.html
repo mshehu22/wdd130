@@ -1,54 +1,112 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact</title>
-  <link rel="stylesheet" href="styles/rafting.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Us | White Water Rafting</title>
+<meta name="description" content="Contact White Water Rafting Company">
+<meta name="author" content="Magdalene Shehu">
+<link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
 
 <header>
-  <img src="images/logo.png" alt="logo">
-  <h1>Contact</h1>
+  <div class="header-container">
+    <div class="logo">
+      <img src="images/logo.jpg" alt="Rafting Logo">
+      <h1>White Water Rafting Company</h1>
+    </div>
 
-  <nav>
-    <ul class="navigation">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="trips.html">Trips</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 </header>
 
 <main>
 
-<section class="employees">
+<h2 style="text-align:center; margin-top:20px;">Contact Us</h2>
 
-  <img src="images/john.jpeg" alt="John">
-  <img src="images/mary.jpeg" alt="Mary">
-  <img src="images/alex.jpeg" alt="Alex">
+<!-- COMPANY INFO -->
+<section class="grid">
+
+  <div class="card">
+    <h3>Our Office</h3>
+    <p>123 River Road<br>Adventure City, USA</p>
+    <p><strong>Phone:</strong> +1 234 567 890</p>
+    <p><strong>Email:</strong> info@rafting.com</p>
+  </div>
+
+  <div class="card">
+    <h3>Location</h3>
+    <iframe 
+      src="https://www.google.com/maps?q=Abuja&output=embed"
+      width="100%" height="250">
+    </iframe>
+  </div>
 
 </section>
 
-<section class="contact-form">
-  <form>
-    <input type="text" placeholder="Name">
-    <input type="email" placeholder="Email">
+<!-- TEAM -->
+<h2 style="text-align:center;">Meet Our Team</h2>
 
-    <textarea placeholder="Message"></textarea>
+<section class="grid">
 
-    <button class="btn">Send</button>
-  </form>
+  <div class="card">
+    <img src="images/john.jpg" alt="John - Senior River Guide">
+    <h3>John - Senior River Guide</h3>
+  </div>
+
+  <div class="card">
+    <img src="images/mary.jpg" alt="Mary - Safety Coordinator">
+    <h3>Mary - Safety Coordinator</h3>
+  </div>
+
+  <div class="card">
+    <img src="images/alex.jpg" alt="Alex - Tour Manager">
+    <h3>Alex - Tour Manager</h3>
+  </div>
+
 </section>
+
+<!-- FORM -->
+<h2 style="text-align:center;">Send Us a Message</h2>
+
+<form>
+
+<label for="name">Full Name</label>
+<input type="text" id="name" name="name" required>
+
+<label for="email">Email Address</label>
+<input type="email" id="email" name="email" required>
+
+<p><strong>Purpose of Message:</strong></p>
+
+<label><input type="radio" name="purpose" value="general" required> General Inquiry</label><br>
+<label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
+<label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label><br><br>
+
+<label for="message">Message</label>
+<textarea id="message" name="message" rows="5" required></textarea>
+
+<label>
+  <input type="checkbox" name="subscribe">
+  Please subscribe me to the monthly newsletter
+</label><br><br>
+
+<button type="submit">Send Message</button>
+
+</form>
 
 </main>
 
 <footer>
-  <p>© 2026 White Water Rafting</p>
+<p>© 2026 White Water Rafting Company | Magdalene Shehu</p>
 </footer>
 
 </body>
-</html>
+         </html>
