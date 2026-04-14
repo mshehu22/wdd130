@@ -8,34 +8,26 @@
 nav {
     background-color: darkblue;
     padding: 10px;
-    display: flex;
-    justify-content: space-around;
 }
 
 nav a {
     color: white;
-    text-decoration: none;
-    padding: 10px;
+    display: block;
+    padding: 20px;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* HEADINGS */
+/* HEADING */
 h1 {
     color: darkblue;
     border-bottom: 1px solid #000;
-    padding: 10px;
 }
 
-/* MAIN CONTENT */
+/* MAIN */
 main {
     max-width: 840px;
-    margin: 0 auto;
 }
 
-/* PROFILE IMAGE ONLY */
+/* PROFILE IMAGE */
 main img {
     width: 150px;
     height: auto;
@@ -44,15 +36,15 @@ main img {
     box-shadow: 0 0 30px gray;
 }
 
-/* PARAGRAPHS */
+/* PARAGRAPH */
 p {
     padding: 0;
 }
 
-/* ASIDE SECTION */
+/* ASIDE */
 aside {
     width: 20rem;
-    margin: 1rem auto;
+    margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.2);
     padding: 1rem;
     background-color: #eeeeee;
@@ -60,7 +52,7 @@ aside {
     text-align: center;
 }
 
-/* COUNTRY IMAGE */
+/* ASIDE IMAGE */
 aside img {
     width: 200px;
     height: auto;
@@ -71,5 +63,4 @@ footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
-    padding: 10px;
     }
