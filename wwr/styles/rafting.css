@@ -1,19 +1,33 @@
-/* RESET */
+/* =========================
+   ROOT VARIABLES (REQUIRED)
+========================= */
+:root {
+  --primary-color: #004e6b;
+  --accent-color: #007ea7;
+  --light-gray: #f5f5f5;
+  --text-color: #222;
+}
+
+/* =========================
+   RESET
+========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* BODY */
+/* =========================
+   BODY
+========================= */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #ffffff;
-  color: #222;
+  color: var(--text-color);
+  background-color: white;
 }
 
-/* GLOBAL IMAGE FIX (IMPORTANT) */
+/* GLOBAL IMAGE FIX */
 img {
   max-width: 100%;
   height: auto;
@@ -24,29 +38,25 @@ img {
    HEADER
 ========================= */
 header {
-  background-color: #004e6b;
+  background-color: var(--primary-color);
   color: white;
   padding: 15px;
-}
 
-.header-container {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
   gap: 20px;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo img {
+header img {
   width: 60px;
 }
 
-/* NAVIGATION (FLEX REQUIRED) */
+header h1 {
+  font-size: 1.5rem;
+}
+
+/* NAV (FLEX REQUIRED) */
 nav {
   display: flex;
   justify-content: flex-end;
@@ -64,7 +74,7 @@ nav a:hover {
 }
 
 /* =========================
-   HERO SECTION (HOME)
+   HERO (REQUIRED FIX)
 ========================= */
 .hero {
   position: relative;
@@ -76,27 +86,31 @@ nav a:hover {
   object-fit: cover;
 }
 
-.hero-text {
+/* HERO TITLE */
+.hero h1 {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  top: 20px;
+  left: 20px;
   color: white;
+  background: rgba(0,0,0,0.4);
+  padding: 10px;
 }
 
-.hero-text h2 {
-  font-size: 2rem;
+/* HERO ARTICLE */
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: white;
+  padding: 10px;
+  width: 250px;
 }
 
-.cta {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 15px;
-  background-color: #007ea7;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
+/* REQUIRED FLOAT RULE */
+.hero article img {
+  float: right;
+  width: 80px;
+  margin-left: 10px;
 }
 
 /* =========================
@@ -108,7 +122,7 @@ nav a:hover {
 }
 
 /* =========================
-   GRID (HOME + TRIPS)
+   GRID LAYOUT
 ========================= */
 .grid {
   display: grid;
@@ -119,62 +133,41 @@ nav a:hover {
 
 /* CARDS */
 .card {
-  background-color: #f5f5f5;
+  background-color: var(--light-gray);
   border-radius: 8px;
   overflow: hidden;
 }
 
 .card img {
-  width: 100%;
   height: 180px;
+  width: 100%;
   object-fit: cover;
 }
 
-.card h3 {
+.card h3,
+.card p {
   padding: 10px;
 }
 
-.card p {
-  padding: 0 10px 10px;
+/* =========================
+   HISTORY + ABOUT SECTION
+========================= */
+section {
+  padding: 20px;
 }
 
 /* =========================
-   HISTORY SECTION (ABOUT)
+   FIGURE SECTION (ABOUT PAGE)
 ========================= */
-.history {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  padding: 20px;
-  align-items: center;
-}
-
-.history img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-}
-
-/* =========================
-   ADVENTURE GALLERY (ABOUT)
-========================= */
-.adventure-gallery {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  padding: 20px;
-  flex-wrap: wrap;
-}
-
-.adventure-gallery figure {
-  flex: 1;
-  min-width: 150px;
+figure {
+  display: inline-block;
+  margin: 10px;
   text-align: center;
 }
 
-.adventure-gallery img {
-  width: 100%;
-  height: 150px;
+figure img {
+  width: 180px;
+  height: 120px;
   object-fit: cover;
 }
 
@@ -194,12 +187,12 @@ th, td {
 }
 
 th {
-  background-color: #004e6b;
+  background-color: var(--primary-color);
   color: white;
 }
 
 /* =========================
-   NEWSLETTER (HOME)
+   NEWSLETTER
 ========================= */
 .newsletter {
   text-align: center;
@@ -223,19 +216,20 @@ th {
    FOOTER
 ========================= */
 footer {
-  background-color: #004e6b;
+  background-color: var(--primary-color);
   color: white;
   text-align: center;
   padding: 15px;
 }
 
-.socials {
+/* REQUIRED SOCIAL NAV */
+.socialmedia {
   display: flex;
   justify-content: center;
   gap: 15px;
   margin-top: 10px;
 }
 
-.socials img {
+.socialmedia img {
   width: 30px;
-   }
+  }
